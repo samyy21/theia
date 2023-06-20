@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd ">
+ 
+ 	<context:annotation-config/>
+ 	<context:component-scan base-package="com.paytm.pgplus"/>
+ 	
+ 	<import resource="classpath:savedcardclient-context.xml"/>
+ 	<import resource="classpath:LooperClientContext.xml"/>
+	
+	<bean id="cashierWorkflowFactory" class="org.springframework.beans.factory.config.ServiceLocatorFactoryBean">
+		<property name="serviceLocatorInterface" value="com.paytm.pgplus.cashier.workflow.util.CashierWorkflowFactory"/>
+	</bean>
+	
+	<alias alias="ISOCARD" name="BankcardWorkflow"/>
+	<alias alias="IMPS" name="IMPSWorkflow"/>
+	<alias alias="COD" name="CODWorkflow"/>
+	<alias alias="ATM" name="ATMWorkflow"/>
+	<alias alias="NB" name="NetbankingWorkflow"/>
+	<alias alias="SUBSCRIPTION" name="SubscriptionWorkflow"/>
+	<alias alias="WALLET" name="WalletWorkflow"/>
+	<alias alias="SEAMLESS" name="SeamlessWorkflow"/>
+	<alias alias="ADD_MONEY_NB" name="AddMoneyNetbankingWorkflow"/>
+	<alias alias="ADD_MONEY_ISOCARD" name="AddMoneyBankcardWorkflow"/>
+	<alias alias="ADD_MONEY_IMPS" name="AddMoneyIMPSWorkflow"/>
+	<alias alias="ADD_MONEY_ATM" name="AddMoneyATMWorkflow"/>
+	<alias alias="ADD_MONEY_UPI" name="AddMoneyUPIWorkflow" />
+	<alias alias="UPI" name="UPIWorkflow"/>
+	<alias alias="DIRECT_BANK_CARD_PAYMENT" name="DirectBankCardPaymentWorkflow"/>
+	<alias alias="RISK_POLICY_CONSULT" name="RiskPaymentWorkflow"/>
+	<alias alias="DIGITAL_CREDIT_PAYMENT" name="DigitalCreditPaymentFlow"/>
+	<alias alias="GENERIC_PAYMENT_WORKFLOW" name="GenericPaymentWorkflow"/>
+	
+</beans>

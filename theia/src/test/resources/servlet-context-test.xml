@@ -1,0 +1,76 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd ">
+		
+	<import resource="classpath:Client-Context.xml"/>	
+	
+    <context:property-placeholder location="classpath:looperclient.properties" ignore-unresolvable="true"/>
+    <context:component-scan base-package="com.paytm.pgplus"/>
+
+    <aop:aspectj-autoproxy/>
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="200"/>
+    
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- Configuring interceptors based on URI -->
+    <mvc:interceptors>
+    	<!-- singnature validation interceptor -->
+        <mvc:interceptor>
+	        <mvc:mapping path="/v1/transactionStatus"/>
+	        <mvc:mapping path="/v1/directBankCardPayment"/>
+	        <bean class="com.paytm.pgplus.theia.interceptors.SignatureInterceptor" />
+	    </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/resources/**"/>
+            <mvc:exclude-mapping path="/healthcheck"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.TheiaInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/processTransaction/**"/>
+            <bean class="com.paytm.pgplus.theia.csrf.interceptor.CSRFGeneratorInterceptor">
+            </bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/DeleteCardDetails/**"/>
+            <mvc:mapping path="/payment/request/submit/**"/>
+            <bean class="com.paytm.pgplus.theia.csrf.interceptor.CSRFValidatorInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!-- Configure Properties File -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="project-properties">
+        <property name="locations">
+            <list>
+                <value>classpath:project_test.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+
+    <import resource="classpath:LooperClientContext.xml"/>
+    <!-- <import resource="classpath:savedcardclient-context.xml"/> -->
+    <import resource="classpath:cashier-context.xml"/>
+    <import resource="classpath*:/promoServiceClientAppContext.xml"/>
+    <import resource="classpath:dynamicwrappercontext.xml"/>
+    <bean class="com.paytm.pgplus.transactionlogger.conf.AspectConfig"/>
+    <!-- Root Context: defines shared resources visible to all other web components -->
+</beans>

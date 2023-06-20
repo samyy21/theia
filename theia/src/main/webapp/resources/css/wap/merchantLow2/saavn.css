@@ -1,0 +1,97 @@
+@font-face{font-family:'Robotoo';font-style:normal;font-weight:400;src:local('Robotoo'),local('Robotoo'),url('../../../fonts/Roboto.woff') format('woff')}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans'),local('OpenSans'),url('../../../fonts/OpenSans.woff') format('woff')}
+
+body {
+	background-color: #f6f6f6;
+	font-family : 'Robotoo';
+	color : #3e3e3e;
+}
+
+
+.blue-btn {
+	background-color: #30b55a;
+	padding: 20px 5px;
+  	width: 100%;
+}
+
+.gry-btn {
+	padding: 20px 5px;
+  	width: 100%;
+  	background-image: none;
+  	border: none;
+}
+
+.header {
+	background-color: #fff;
+	border : 0px;
+	margin: 10px 0px;
+	font-size : 18px !important;
+	padding: 15px 20px;
+}
+
+.header .fr {
+	float : none;
+}
+
+
+input[type="text"], input[type="tel"], input[type="password"], select {
+	padding : 10px; 
+	border-radius: 5px;
+	width : 93%;
+}
+
+select {
+	height : 40px;
+}
+
+.cvv-input {
+	margin-top : 5px;
+}
+
+.amount-grid {
+	padding : 13px 0px;
+}
+
+.cart {
+  padding: 0px 20px;
+  width : initial;
+}
+
+.row-dot{
+	font-family : 'Robotoo';
+	padding : 0px;
+}
+
+.row-dot label {
+	color : #a4a4a4;
+	font-family : 'Robotoo';	
+}
+
+.fields {
+	padding : 15px;
+}
+
+.pay-mode-tab form {
+	border-color: #fff;
+	margin: 0px;
+	border-radius: 0px;
+	padding : 0px !important;
+}
+
+/* .other-modes-wrapper {
+	display : none;
+} */
+
+#totalAmountSpan, .WebRupee, .selected-mode-name,#walletBalance {
+	color : #30b55a;
+}
+
+.amount-grid .small {
+	font-size: 18px;
+	color : #3e3e3e; 
+}
+
+#otherText {
+	margin-top: 0px;
+  	border-top: 1px solid #f7f7f7;
+}

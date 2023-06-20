@@ -1,0 +1,214 @@
+#wrapper {
+	background-image:url(../images/bodyBG.png);
+	background-repeat:repeat-x;
+	height:auto;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:0px;
+	padding-top:3px;
+}
+#header {
+	height:70px;
+	margin-bottom:2px;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+	border-bottom-color:#6c5293;
+}
+#headerInner {
+	width:970px;
+	margin:auto;
+}
+#contain{
+	width:970px;
+	margin:auto;
+}
+#heading_placeHoder {
+	font-size:14px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+#navigationBar {
+	height:26px;
+	background-image:url(../images/navBG.png);
+	background-repeat:repeat-x;
+}
+#menu_item {
+	width:970px;
+	margin:auto;
+}
+#Leftlogo {
+	background-image:url(../images/One97_logo.png);
+	background-repeat:no-repeat;
+	width:284px;
+	float:left;
+	height:50px;
+}
+#Rightlogo {
+	float:right;
+	background-image:url(../images/paytm_logo.png);
+	background-repeat:no-repeat;
+	width:138px;
+	height:50px;
+}
+#logoInst {
+	padding-top:15px;
+	float:right;
+	width:auto;
+}
+#header_txt {
+	float:right;
+	width:970px;
+}
+#AppName_txt {
+	float:left;
+	width:auto;
+	text-transform:uppercase;
+}
+#serverTime_txt {
+	float:right;
+	width:auto;
+}
+#container {
+	width:970px;
+	margin:auto;
+	margin-bottom:30px;
+}
+#container1 {
+	padding-top:100px;
+	height: 250px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:40px;
+}
+#topHeading {
+	height:20px;
+	background-color:#6c5293;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:5px;
+}
+#topHeading_login {
+	height:30px;
+	background-color:#6c5293;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:5px;
+}
+#leftBox {
+	float:left;
+	margin-left:10px;
+	width:470px;
+}
+#rightBox {
+	float:right;
+	margin-right:10px;
+	width:470px;
+}
+#right_heading_text {
+	text-align:center;
+	margin:5px;
+}
+#left_heading_text {
+	text-align:center;
+	margin:5px;
+}
+#leftTable1 th {
+	background-color: #CCCCCC;
+	text-align: left;
+	font-size:11px;
+}
+#leftTable1 tr {
+	background-color: #FBFBFB;
+	text-align: left;
+	font-size:11px;
+}
+#leftTable2 th {
+	background-color: #CCCCCC;
+	text-align: left;
+	font-size:11px;
+}
+#leftTable2 tr {
+	background-color: #FBFBFB;
+	text-align: left;
+	font-size:11px;
+}
+#rightTable1 th {
+	background-color: #CCCCCC;
+	text-align: left;
+	font-size:11px;
+}
+#rightTable1 tr {
+	background-color: #FBFBFB;
+	text-align: left;
+	font-size:11px;
+}
+#rightTable2 th {
+	background-color: #CCCCCC;
+	text-align: left;
+	font-size:11px;
+}
+#rightTable2 tr {
+	background-color: #FBFBFB;
+	text-align: left;
+	font-size:11px;
+}
+#footer {
+	height:30px;
+	background-color:#6c5293;
+	text-align:center;
+	padding-top:10px;
+	color: #FFFFFF;
+}
+#loginInner {
+	height:200px;
+	border-style:solid;
+	border-width:thin;
+	border-color:#6c5293;
+}
+#logLeft {
+	float:left;
+	padding:30px;
+}
+#logRight {
+	float:right;
+}
+.submit-button {
+	float:left;
+	padding:4px 7px;
+	color:#FFFFFF;
+	cursor:pointer;
+	display:block;
+	text-decoration:none;
+	border:1px solid #CCCCCC;
+	background-color:#6c5293;
+}
+#left_Graph {
+	font-size:10px;
+}
+#right_Graph {
+	font-size:10px;
+}
+#select{
+width:150px;
+}
+#URL{
+width:350px;
+}
+#Msg{
+width:330px;
+}
+#info{
+text-align:left;
+padding:10px;
+margin-bottom:30px;
+height:40px;
+border: 1px solid #d0ccc9;
+border-width: 1px 1px 1px 1px;
+}

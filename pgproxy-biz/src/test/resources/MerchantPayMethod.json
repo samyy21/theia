@@ -1,0 +1,828 @@
+{
+  "payMethodViews": [
+    {
+      "payChannelOptionViews": [
+        {
+          "disableReason": "BALANCE_ACCOUNT_NOT_EXIST",
+          "enableStatus": "false",
+          "oneClickChannel": "false",
+          "payMethod": "BALANCE",
+          "payOption": "BALANCE",
+          "prepaidCardChannel": "false"
+        }
+      ],
+      "payMethod": "BALANCE"
+    },
+    {
+      "payChannelOptionViews": [
+        {
+          "enableStatus": "true",
+          "instDispCode": "VISA",
+          "instId": "VISA",
+          "instName": "Visa Inc.",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_VISA",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD",
+            "COFT"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "MASTER",
+          "instId": "MASTER",
+          "instName": "MasterCard Inc.",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_MASTER",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD",
+            "COFT"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "MAESTRO",
+          "instId": "MAESTRO",
+          "instName": "Maestro",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_MAESTRO",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "RUPAY",
+          "instId": "RUPAY",
+          "instName": "RuPay",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_RUPAY",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "DINERS",
+          "instId": "DINERS",
+          "instName": "Diners Club International",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_DINERS",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "DISCOVER",
+          "instId": "DISCOVER",
+          "instName": "Discover Inc.",
+          "oneClickChannel": "false",
+          "payMethod": "CREDIT_CARD",
+          "payOption": "CREDIT_CARD_DISCOVER",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        }
+      ],
+      "payMethod": "CREDIT_CARD"
+    },
+    {
+      "payChannelOptionViews": [
+        {
+          "enableStatus": "true",
+          "instDispCode": "VISA",
+          "instId": "VISA",
+          "instName": "Visa Inc.",
+          "oneClickChannel": "false",
+          "payMethod": "DEBIT_CARD",
+          "payOption": "DEBIT_CARD_VISA",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD",
+            "COFT",
+            "ECOMTOKEN"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "MASTER",
+          "instId": "MASTER",
+          "instName": "MasterCard Inc.",
+          "oneClickChannel": "false",
+          "payMethod": "DEBIT_CARD",
+          "payOption": "DEBIT_CARD_MASTER",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD",
+            "COFT",
+            "ECOMTOKEN"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "MAESTRO",
+          "instId": "MAESTRO",
+          "instName": "Maestro",
+          "oneClickChannel": "false",
+          "payMethod": "DEBIT_CARD",
+          "payOption": "DEBIT_CARD_MAESTRO",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "RUPAY",
+          "instId": "RUPAY",
+          "instName": "RuPay",
+          "oneClickChannel": "false",
+          "payMethod": "DEBIT_CARD",
+          "payOption": "DEBIT_CARD_RUPAY",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD",
+            "COFT"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "DINERS",
+          "instId": "DINERS",
+          "instName": "Diners Club International",
+          "oneClickChannel": "false",
+          "payMethod": "DEBIT_CARD",
+          "payOption": "DEBIT_CARD_DINERS",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ],
+          "supportPayOptionSubTypes": [
+            "CORPORATE_CARD"
+          ]
+        }
+      ],
+      "payMethod": "DEBIT_CARD"
+    },
+    {
+      "payChannelOptionViews": [
+        {
+          "enableStatus": "true",
+          "instDispCode": "HDFC",
+          "instId": "HDFC",
+          "instName": "HDFC Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_HDFC",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "ICICI",
+          "instId": "ICICI",
+          "instName": "ICICI Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_ICICI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "AXIS",
+          "instId": "AXIS",
+          "instName": "Axis Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_AXIS",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "PNB",
+          "instId": "PNB",
+          "instName": "Punjab National Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_PNB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "PNBCORP",
+          "instId": "PNBCORP",
+          "instName": "PNB Corporate",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_PNBCORP",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "Kotak",
+          "instId": "NKMB",
+          "instName": "Kotak Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_NKMB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "ANDB",
+          "instId": "ANDB",
+          "instName": "Andhra Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_ANDB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "SBI",
+          "instId": "ASBI",
+          "instName": "State Bank of India",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_ASBI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "BBK",
+          "instId": "BBK",
+          "instName": "Bank of Bahrain and Kuwait",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_BBK",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "BBL",
+          "instId": "BBL",
+          "instName": "Bandhan Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_BBL",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "BHARAT",
+          "instId": "BHARAT",
+          "instName": "Bharat Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_BHARAT",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "BOI",
+          "instId": "BOI",
+          "instName": "Bank of India",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_BOI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "BOM",
+          "instId": "BOM",
+          "instName": "Bank of Maharashtra",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_BOM",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "AXISCORP",
+          "instId": "AXISCORP",
+          "instName": "Axis Corporate",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_AXISCORP",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "Canara",
+          "instId": "CANARA",
+          "instName": "Canara Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_CANARA",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "CSB",
+          "instId": "CSB",
+          "instName": "CSB Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_CSB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "CBI",
+          "instId": "CBI",
+          "instName": "Central Bank of India",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_CBI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "CITIUB",
+          "instId": "CITIUB",
+          "instName": "City Union Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_CITIUB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "CORP",
+          "instId": "CORP",
+          "instName": "Union Bank of India Erstwhile Corp Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_CORP",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "COSMOS",
+          "instId": "COSMOS",
+          "instName": "Cosmos Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_COSMOS",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "Deutsche",
+          "instId": "DEUTS",
+          "instName": "Deutsche Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_DEUTS",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "DCB",
+          "instId": "DCB",
+          "instName": "DCB Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_DCB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "Dena",
+          "instId": "DENA",
+          "instName": "Dena Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_DENA",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "GPPB",
+          "instId": "GPPB",
+          "instName": "Gopinath Patil Parsik Janata Sahakari Bank Ltd.",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_GPPB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "ICICI CORP",
+          "instId": "ICICICORPORATE",
+          "instName": "ICICI Corporate Banking",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_ICICICORPORATE",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "IDBI",
+          "instId": "IDBI",
+          "instName": "IDBI Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_IDBI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "IDFC",
+          "instId": "IDFC",
+          "instName": "IDFC FIRST Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_IDFC",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "INDB",
+          "instId": "INDB",
+          "instName": "Indian Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_INDB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "IOB",
+          "instId": "IOB",
+          "instName": "Indian Overseas Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_IOB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "INDS",
+          "instId": "INDS",
+          "instName": "IndusInd Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_INDS",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "JKB",
+          "instId": "JKB",
+          "instName": "Jammu and Kashmir Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_JKB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "JSB",
+          "instId": "JSB",
+          "instName": "Janata Sahakari Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_JSB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "KTKB",
+          "instId": "KTKB",
+          "instName": "Karnataka Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_KTKB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "KVB",
+          "instId": "KVB",
+          "instName": "Karur Vysya Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_KVB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "LVB",
+          "instId": "LVB",
+          "instName": "Lakshmi Vilas Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_LVB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "OBPRF",
+          "instId": "OBPRF",
+          "instName": "PNB (Erstwhile- OBC)",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_OBPRF",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "PPBL",
+          "instId": "PPBL",
+          "instName": "Paytm Payments Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_PPBL",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "Paytm",
+          "instId": "PYTM",
+          "instName": "Paytm Payments Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_PYTM",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "PSB",
+          "instId": "PSB",
+          "instName": "Punjab and Sind Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_PSB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "RBL",
+          "instId": "RATN",
+          "instName": "RBL Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_RATN",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "STB",
+          "instId": "STB",
+          "instName": "Saraswat Cooperative Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_STB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "SIB",
+          "instId": "SIB",
+          "instName": "South Indian Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_SIB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "SSFB",
+          "instId": "SSFB",
+          "instName": "Suryoday Small Finance Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_SSFB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "SVC",
+          "instId": "SVC",
+          "instName": "SVC Cooperative Bank Ltd",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_SVC",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "TNMB",
+          "instId": "TNMB",
+          "instName": "Tamilnad Mercantile Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_TNMB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "UNI",
+          "instId": "UNI",
+          "instName": "Union Bank of India",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_UNI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "USFB",
+          "instId": "USFB",
+          "instName": "Ujjivan Small Finance Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_USFB",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "UBI",
+          "instId": "UBI",
+          "instName": "United Bank of India",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_UBI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "enableStatus": "false",
+          "instDispCode": "VJYA",
+          "instId": "VJYA",
+          "instName": "Vijaya Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_VJYA",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "YES",
+          "instId": "YES",
+          "instName": "Yes Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_YES",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "UCO",
+          "instId": "UCO",
+          "instName": "UCO Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_UCO",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "AUBL",
+          "instId": "AUBL",
+          "instName": "AU Small Finance Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_AUBL",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "Equitas",
+          "instId": "ESFB",
+          "instName": "Equitas Bank",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_ESFB",
+          "prepaidCardChannel": "false",
+          "supportCountries": [
+            "IN"
+          ]
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "RBS",
+          "instId": "RBS",
+          "instName": "Royal Bank of Scotland",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_RBS",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "UBICORPORATE",
+          "instId": "UBICORPORATE",
+          "instName": "Union Bank of India Corporate",
+          "oneClickChannel": "false",
+          "payMethod": "NET_BANKING",
+          "payOption": "NET_BANKING_UBICORPORATE",
+          "prepaidCardChannel": "false"
+        }
+      ],
+      "payMethod": "NET_BANKING"
+    },
+    {
+      "payChannelOptionViews": [
+        {
+
+          "enableStatus": "true",
+          "instDispCode": "PAYTMCC",
+          "instId": "PAYTMCC",
+          "instName": "Paytm Digital Credit",
+          "oneClickChannel": "false",
+          "payMethod": "PAYTM_DIGITAL_CREDIT",
+          "payOption": "PAYTM_DIGITAL_CREDIT",
+          "prepaidCardChannel": "false"
+        }
+      ],
+      "payMethod": "PAYTM_DIGITAL_CREDIT"
+    },
+    {
+      "payChannelOptionViews": [
+        {
+          "enableStatus": "true",
+          "instDispCode": "UPI",
+          "instId": "UPI",
+          "instName": "Unified Payment Interace",
+          "oneClickChannel": "false",
+          "payMethod": "UPI",
+          "payOption": "UPI",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "UPIPUSH",
+          "instId": "UPIPUSH",
+          "instName": "Unified Payment Interface - PUSH",
+          "oneClickChannel": "false",
+          "payMethod": "UPI",
+          "payOption": "UPI_PUSH",
+          "prepaidCardChannel": "false"
+        },
+        {
+          "enableStatus": "true",
+          "instDispCode": "UPIPUSHEXPRESS",
+          "instId": "UPIPUSHEXPRESS",
+          "instName": "Unified Payment Interface - PUSH Express",
+          "oneClickChannel": "false",
+          "payMethod": "UPI",
+          "payOption": "UPI_PUSH_EXPRESS",
+          "prepaidCardChannel": "false"
+        }
+      ],
+      "payMethod": "UPI"
+    }
+  ]
+}

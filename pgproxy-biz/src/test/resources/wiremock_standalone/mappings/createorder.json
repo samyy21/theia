@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "ANY",
+    "urlPattern": "/alipayplus/acquiring/order/createOrder.htm"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "body-transformer"
+    ],
+    "jsonBody": {
+      "response":
+{"head":{"function":"alipayplus.acquiring.order.createOrder","clientId":"2016030715243903536806","reqMsgId":"0162377c3a7842028d17736851bf4243pgptheia43paytmlocal","version":"fixed-a","respTime":"2020-01-22T11:44:56+05:30"},
+  "body":{"acquirementId":"20200122111212800110168121509365596","merchantTransId":"191227020195028249_1585240323","resultInfo":{"resultCode":"SUCCESS","resultCodeId":"00000000","resultMsg":"success","resultStatus":"S"}}},
+"signature":"8e6b39e6ef04bfaca4b50f52730c5c26ad111f81d1285f94d29ed7644ab40c74"}}
+
+}
+

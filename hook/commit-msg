@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+message_file = ARGV[0]
+message = File.read(message_file)
+
+$regex = /^\[SMP\d-\d+\]/
+$pgpRegex = /^\[PGP-\d+\]/
+$aoaRegex = /^\[AOA-\d+\]/
+$securityRegex = /^\[SEC-\d+\]/
+$regexPg2 = /^\[PG2-\d+\]/
+
+if !($regex.match(message) || $pgpRegex.match(message) || $aoaRegex.match(message) || $securityRegex.match(message) || $regexPg2.match(message))
+
+ puts "[POLICY] Your commit message does not start with jira id, do insert a valid ticket number at beginning (i.e. [SMP1-0000] or [PGP-0] or [AOA-0] or [SEC-0])"
+ exit 1
+end

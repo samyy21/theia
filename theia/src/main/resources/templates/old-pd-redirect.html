@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Paytm Secure Online Payment Gateway</title>
+
+</head>
+<body>
+<table align='center'>
+    <tr>
+        <td><STRONG>Transaction is being processed,</STRONG></td>
+    </tr>
+    <tr>
+        <td><font color='blue'>Please wait ...</font></td>
+    </tr>
+    <tr>
+        <td>(Please do not press 'Refresh' or 'Back' button</td>
+    </tr>
+</table>
+
+<FORM NAME='PROCESS_TRANSACTION_FORM' ACTION='${merurl}' METHOD='POST'>
+    ${posthiddenparams}</FORM>
+</body>
+<script type="text/javascript">
+    document.forms[0].submit();
+</script>
+</html>

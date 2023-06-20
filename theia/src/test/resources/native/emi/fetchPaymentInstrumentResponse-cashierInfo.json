@@ -1,0 +1,312 @@
+{
+  "head": {
+    "mid": "addcom24063533614140",
+    "clientId": "121",
+    "version": "V1",
+    "requestId": "13",
+    "responseTimestamp": "1509450717353"
+  },
+  "body": {
+    "extendInfo": {},
+    "signature": "",
+    "resultInfo": {
+      "resultStatus": "S",
+      "resultCodeId": "0000",
+      "resultCode": "SUCCESS",
+      "resultMsg": "Success"
+    },
+    "orderId": null,
+    "postConvenienceFee": {},
+    "enabledFlows": [
+      "ADD_AND_PAY"
+    ],
+    "payMethodViews": {
+      "merchantSavedInstruments": {
+        "savedCards": [],
+        "savedVPAs": []
+      },
+      "addMoneySavedInstruments": {
+        "savedCards": [],
+        "savedVPAs": []
+      },
+      "merchantPayMethods": [
+        {
+          "payMethod": "BALANCE",
+          "displayName": "Wallet",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [
+            {
+              "payMethod": "BALANCE",
+              "payChannelOption": "BALANCE",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": null,
+              "balanceInfo": {
+                "payerAccountNo": "20070000000004771084",
+                "accountBalance": {
+                  "currency": "INR",
+                  "value": "0"
+                },
+                "payerAccountExists": true
+              }
+            }
+          ]
+        },
+        {
+          "payMethod": "UPI",
+          "displayName": "BHIM UPI",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [
+            {
+              "payMethod": "UPI",
+              "payChannelOption": "UPI",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": null,
+              "instId": "UPI",
+              "instName": "Unified Payment Interace"
+            }
+          ]
+        },
+        {
+          "payMethod": "CREDIT_CARD",
+          "displayName": "Credit Card",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": []
+        },
+        {
+          "payMethod": "NET_BANKING",
+          "displayName": "Net Banking",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [
+            {
+              "payMethod": "NET_BANKING",
+              "payChannelOption": "NET_BANKING_SBI",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": "sbi.png",
+              "instId": "SBI",
+              "instName": "State Bank of India"
+            },
+            {
+              "payMethod": "NET_BANKING",
+              "payChannelOption": "NET_BANKING_HDFC",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": null,
+              "instId": "HDFC",
+              "instName": "HDFC Bank"
+            },
+            {
+              "payMethod": "NET_BANKING",
+              "payChannelOption": "NET_BANKING_ICICI",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": null,
+              "instId": "ICICI",
+              "instName": "ICICI Bank"
+            }
+          ]
+        },
+        {
+          "payMethod": "EMI",
+          "displayName": "EMI",
+          "isDisabled": {
+            "status": "false",
+            "msg": ""
+          },
+          "payChannelOptions": [
+            {
+              "payMethod": "EMI",
+              "payChannelOption": "EMI_HDFC",
+              "isDisabled": {
+                "status": "false",
+                "msg": null
+              },
+              "hasLowSuccess": {
+                "status": "false",
+                "msg": ""
+              },
+              "iconUrl": null,
+              "emiChannelInfos": [
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "3.0",
+                  "ofMonths": "3",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "3.0",
+                  "ofMonths": "6",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "4.0",
+                  "ofMonths": "9",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "4.0",
+                  "ofMonths": "12",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                }
+              ],
+              "emiHybridChannelInfos": [
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "3.0",
+                  "ofMonths": "3",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "3.0",
+                  "ofMonths": "6",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "4.0",
+                  "ofMonths": "9",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                },
+                {
+                  "planId": null,
+                  "tenureId": null,
+                  "interestRate": "4.0",
+                  "ofMonths": "12",
+                  "minAmount": {
+                    "currency": "INR",
+                    "value": "200"
+                  },
+                  "maxAmount": {
+                    "currency": "INR",
+                    "value": "10000"
+                  },
+                  "cardAcquiringMode": "ONUS",
+                  "perInstallment": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "addMoneyPayMethods": null
+    }
+  }
+}

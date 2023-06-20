@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function getParameterByName(name) {
+				name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+				var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+				results = regex.exec(location.search);
+				return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+			}
+			var code = getParameterByName("code");
+			// get session_id from state parameter
+			var state = getParameterByName("state");
+			var session_id = state ? state.split(":")[4] : "";
+			
+			// open authResponse in iframe only - same as in normal case
+			window.location = "/oltp-web/oauthResponse" + ";jsessionid=" + session_id + "?code=" + code + "&state=" + state;
+		</script>
+	</body>
+</html>

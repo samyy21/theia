@@ -1,0 +1,46 @@
+body, p, h2{margin:0; padding:0;}
+img{border:none;}
+a{text-decoration:none;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.pad{padding:10px 7px}
+.divider{border-top:#e4e4e4 solid 1px;}
+.mr10{margin-right:10px;}
+.header{padding:8px 7px 0; background:url(../../images/wap/header-bg.png) repeat-x;height:40px;}
+h2{color:#333; font:bold medium Arial, Helvetica, sans-serif; padding:5px 7px;}
+p{color:#333; font:14px Arial, Helvetica, sans-serif;}
+.blu-hd{color:#2cbdfc;font:bold 16px Arial, Helvetica, sans-serif;border-top:#e4e4e4 solid 1px;  padding:8px 7px;}
+.border-bar{border-top:#e4e4e4 solid 1px;color:#ab9995; font:bold 14px Arial, Helvetica, sans-serif; padding:7px 7px 7px 10px;}
+.border-bar a{color:#ab9995;}
+.footer{color:#3b3b3b; padding:7px; font:12px Arial, Helvetica, sans-serif;border-top:#e4e4e4 solid 1px; margin-top:15px;}
+.footer a{color:#3b3b3b; margin:0 6px;}
+.footer a:hover, .border-bar a:hover{color:#2cbdfc;}
+.outer{color:#ab9995;font:14px Arial, Helvetica, sans-serif;padding:0 7px 15px;}
+/*Form*/
+.form-container{padding:10px 7px;color:#333333;font:normal medium Arial, Helvetica, sans-serif;margin-bottom:10px;}
+.mt10{margin-top:10px;}
+input[type="text"], input[type="password"], select, input[type="text"]:focus, select:focus, input[type="password"]:focus, textarea{margin:5px 0 0 0;color:#333333;font:normal 14px Arial, Helvetica, sans-serif;padding:5px; width:70%;border:#b9b9b9 solid 1px;}
+.button{background-color:#26b0de;border-radius:3px; color:#ffffff; border:none; padding:7px;font:normal 14px Arial, Helvetica, sans-serif;-webkit-appearance: none; min-width:88px; -webkit-appearance: none; margin-top:10px;}
+.sm-txt{color:#afaea9; font:normal small Arial, Helvetica, sans-serif;}
+.blu{color:#2cbdfc}
+.error{
+	font:12px Helvetica, Arial, Verdana, sans-serif;color:red;
+}
+.cancel{color:#2cbdfc; text-decoration:underline;}
+.cancel:hover, .delete:hover{color:#555;}
+.delete{color:#2cbdfc; text-decoration:underline; border:none; background-color:#fff; cursor:pointer;}
+ol,ul{
+	list-style:none;
+}
+li{
+	list-style:none;
+	font:normal;
+	font-size: 14px
+}
+
+.blue {
+    color: #2CBDFC;
+}
+.alert{background-color:#fafafa;color:#010101; padding:10px; font-size:13px; margin-top:10px}
+.alert-txt{margin-left:12px; width:86%;}

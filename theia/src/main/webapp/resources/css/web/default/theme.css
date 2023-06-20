@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+.checkbox{
+	background:url(../../../images/web/checkbox.png) no-repeat scroll 0 0 transparent;
+}
+.radio {
+	background: url("../../../images/web/checkbox-ol.png") no-repeat scroll 0 0 transparent;
+}
+.unchk_btn span,
+.save-card span,
+.save-card-option span,
+ul.atm-panel li,
+ul.netbanking-panel li,
+ul.saved-cards-list li  {
+	background-image:url(../../../images/web/newcheckbox.png);
+}
+.div {
+	border-bottom:1px solid #e5e5e5;
+}
+.padd,.hpadd {
+	background-color:#fff;
+}
+.gray_container {
+	background-color: #f0f1f2;
+	border: 1px solid #f0f1f2;
+}
+.dshadow,.dshadow1{
+	background:url(../../../images/web/shadow.jpg) no-repeat scroll center bottom transparent;
+}
+.tab_container {
+	background-color:#fff;
+}
+.query .chk{
+	background:url(../../../images/web/rch-icon.gif) no-repeat scroll -305px -29px transparent;
+}
+.query label {
+	color: #636363;
+}
+.query select {
+	border: 1px solid #E5E5E5;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) inset;
+	color: #717171;
+}
+.query select:hover, .query select:focus {
+	border-color: #39A9D2;
+	outline: 0 solid #39A9D2;
+}
+.query input[type="text"], .query input[type="password"] {
+	border: 1px solid #E5E5E5;
+	color: #717171;
+}
+.query input[type="text"]:hover, .query input[type="text"]:focus, .query input[type="password"]:hover, .query input[type="password"]:focus {
+	border-color: #39A9D2;
+}
+.submit {
+	background-color: #1ab9f8;
+	color: #FFFFFF;
+}
+.submit:hover {
+	background-color: #339ACD;
+}
+.submit:active {
+	background-color: #339ACD;
+}
+.white {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+.white1 {
+	background:  #FFFFFF;
+}
+.cvv {
+	color: #0ea1da;
+}
+.cvv a {
+	color: #0ea1da;
+}
+.cvv1 {
+	color: #0ea1da;
+}
+.cvv1 a {
+	color: #0ea1da;
+	font: 14px Helvetica, Arial, Verdana, sans-serif;
+	padding: 9px 0 0 0;
+	width: 245px;
+}
+.error {
+	color: #FF0000;
+}
+.footer-query-top {
+	border-top:1px solid #d3d2d2;
+}
+.footer-left {
+	color:#818080;
+}
+.gray {
+	background:#f4f4f4;
+}
+.lock {
+	color:#aaaaaa;
+}
+.lock1 {
+	color:#aaaaaa;
+}
+.list li span {
+	color:#717171;
+}
+.list li span a {
+	color:#00abe5;
+}
+a.tooltip:hover span {
+	color:#858585;
+	background:#fff url(src/css-tooltip-gradient-bg.png) repeat-x 0 0;
+}
+a.tooltip span {
+	-moz-box-shadow: 0px 0px 8px 4px #c1c1c1;
+	-webkit-box-shadow: 0px 0px 8px 4px #c1c1c1;
+	box-shadow: 0px 0px 8px 4px #c1c1c1;
+}
+
+#container {
+	background:#FFF;
+}
+#header-full {
+	border-bottom:1px solid #d3d2d2;
+}
+#merchand-logo{
+	padding-top: 10px;
+}
+.gray_container {
+	background-color: #f0f1f2;
+	border: 1px solid #f0f1f2;
+}
+.tab_container {
+	background-color:#fff;
+	color:#888;
+}
+.blu {
+	color:#00aaeb;
+}
+#tab-wrapper {
+	background: none repeat scroll 0 0 #43BFFA;
+	color: #FFFFFF;
+}
+ul.mytabs li {
+	border-right: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+ul.mytabs li:hover {
+	color: #0B526A;
+}
+ul.mytabs li span.act{
+	background:url(../../../images/web/newtabarrow.png) no-repeat scroll center bottom transparent;
+	color: #0B526A;
+}
+.white_container {
+	background-color: #FFFFFF;
+	color: #636363;
+}
+#cart_detail dl {
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+#cart_detail dd b {
+	color: #000000;
+}
+.italic {
+	color: #AAAAAA;
+}
+.hide-up {
+	color:#AAAAAA;
+	background:#f3f4f6
+}
+.footer-query-top {
+	border-top:1px solid #d3d2d2;
+}
+.footer-left {
+	color:#818080;
+}

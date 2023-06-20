@@ -1,0 +1,27 @@
+!!com.paytm.pgplus.request.InitiateTransactionRequest
+head:
+  clientId: C11
+  version: v1
+  requestId: R1
+body:
+  requestType: R1
+  mid: addcom24063533614140
+  orderId: O1
+  custId: CU1
+  txnAmount: '201.2'
+  channelId: CH1
+  industryTypeId: Retail
+  website: W
+  checksumHash: ta808EKxbi0Z5j7Yf4uPDzFF++pVhQWzFcU29CycHEC6phEqZZFtmHj5WslSWzY6DgsPsRo1BpfCrlWs610F0VCln+FVyGKYY5dEPHptt8U=
+  ssoToken: 9a16c252-d2f7-4534-8817-6d3a6cc7cee4
+  deviceId: D1
+  disabledPaymentMode: 'COD,EMI'
+  promoCampId: null
+  emiOptions: BAJAJFN-DROP_ALL
+  address: Address
+  pincode: 110035
+  emailId: emailId
+  mobileNo: mobileNo
+  callbackUrl: callbackUrl
+  city: city
+  state: state

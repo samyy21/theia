@@ -1,0 +1,187 @@
+!!CashierInfoResponse
+body:
+  enabledFlows: [!!com.paytm.pgplus.theia.offline.enums.PaymentFlow 'ADD_AND_PAY']
+  extendInfo: {}
+  orderId: O1
+  payMethodViews:
+    addMoneyPayMethods: null
+    addMoneySavedInstruments:
+      savedCards: []
+      savedVPAs: []
+    merchantPayMethods:
+    - displayName: Wallet
+      isDisabled: {msg: '', status: 'false'}
+      payChannelOptions:
+      - !!com.paytm.pgplus.theia.offline.model.payview.Wallet
+        balanceInfo:
+          accountBalance: {currency: INR, value: '1864'}
+          payerAccountExists: true
+          payerAccountNo: '20070000000007785232'
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: BALANCE
+        payMethod: BALANCE
+      payMethod: BALANCE
+    - displayName: Net Banking
+      isDisabled: {msg: '', status: 'false'}
+      payChannelOptions:
+      - !!com.paytm.pgplus.theia.offline.model.payview.NetBanking
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        instId: ICICI
+        instName: ICICI Bank
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: NET_BANKING_ICICI
+        payMethod: NET_BANKING
+      - !!com.paytm.pgplus.theia.offline.model.payview.NetBanking
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: sbi.png
+        instId: SBI
+        instName: State Bank of India
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: NET_BANKING_SBI
+        payMethod: NET_BANKING
+      - !!com.paytm.pgplus.theia.offline.model.payview.NetBanking
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        instId: HDFC
+        instName: HDFC Bank
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: NET_BANKING_HDFC
+        payMethod: NET_BANKING
+      payMethod: NET_BANKING
+    - displayName: Credit Card
+      isDisabled: {msg: '', status: 'false'}
+      payChannelOptions: []
+      payMethod: CREDIT_CARD
+    - displayName: EMI
+      isDisabled: {msg: '', status: 'false'}
+      payChannelOptions:
+      - &id001 !!com.paytm.pgplus.theia.offline.model.payview.EmiChannel
+        emiChannelInfos:
+        - cardAcquiringMode: ONUS
+          interestRate: '3.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '3'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '3.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '6'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '4.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '9'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '4.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '12'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        emiHybridChannelInfos:
+        - cardAcquiringMode: ONUS
+          interestRate: '3.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '3'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '3.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '6'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '4.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '9'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        - cardAcquiringMode: ONUS
+          interestRate: '4.0'
+          maxAmount: {currency: INR, value: '10000'}
+          minAmount: {currency: INR, value: '200'}
+          ofMonths: '12'
+          perInstallment: '0'
+          planId: null
+          tenureId: null
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        instId: HDFC
+        instName: HDFC Bank
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: EMI_HDFC
+        payMethod: EMI
+      payMethod: EMI
+    - displayName: BHIM UPI
+      isDisabled: {msg: '', status: 'false'}
+      payChannelOptions:
+      - !!com.paytm.pgplus.theia.offline.model.payview.UPI
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        instId: UPI
+        instName: Unified Payment Interace
+        isDisabled: {msg: null, status: 'false'}
+        payChannelOption: UPI
+        payMethod: UPI
+      payMethod: UPI
+    merchantSavedInstruments:
+      savedCards:
+      - cardDetails:
+          cardId: '1000000140'
+          cardNumber: null
+          cardType: CREDIT_CARD
+          created_on: ''
+          emiDetails: *id001
+          expiryDate: null
+          firstSixDigit: '471865'
+          lastFourDigit: '336'
+          status: '1'
+          updated_on: ''
+          userId: '1107196131'
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: null
+        instId: VISA
+        instName: Visa Inc.
+        isDisabled: {msg: null, status: 'false'}
+        issuingBank: HDFC
+        payChannelOption: CREDIT_CARD_VISA
+        payMethod: CREDIT_CARD
+        supportedCountries: [!!com.paytm.pgplus.theia.offline.enums.CountryCode 'IN']
+      - cardDetails: {cardId: '2000667', cardNumber: null, cardType: CREDIT_CARD,
+          created_on: '', emiDetails: null, expiryDate: null, firstSixDigit: '652863',
+          lastFourDigit: '4006', status: '1', updated_on: '', userId: '1107196131'}
+        hasLowSuccess: {msg: '', status: 'false'}
+        iconUrl: ''
+        instId: RUPAY
+        instName: RuPay
+        isDisabled: {msg: null, status: 'false'}
+        issuingBank: ANDB
+        payChannelOption: CREDIT_CARD_RUPAY
+        payMethod: CREDIT_CARD
+        supportedCountries: [!!com.paytm.pgplus.theia.offline.enums.CountryCode 'IN']
+      savedVPAs: []
+  postConvenienceFee: {enabled: 'false'}
+  resultInfo: {resultCode: SUCCESS, resultCodeId: '0000', resultMsg: Success, resultStatus: S}
+  signature: ''
+head: {clientId: '121', mid: addcom24063533614140, requestId: '13', version: V1}

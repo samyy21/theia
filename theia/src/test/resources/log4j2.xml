@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" monitorInterval="30">
+	<!-- Don't forget to set system property -DLog4jContextSelector=org.apache.logging.log4j.core.async.LoggerContextSelector 
+		to make all loggers asynchronous. -->
+	<Properties>
+		<Property name="logpath-location">/paytm/logs</Property>
+		<Property name="logfile-name">theia.log</Property>
+		<Property name="txnState-logfile-name">txn_states.log</Property>
+		<Property name="txnState-archive">${logpath-location}/archive/txnState</Property>
+		<Property name="archive">${logpath-location}/archive/theia</Property>
+		<Property name="facade-logfile-name">theia_facade.log</Property>
+		<Property name="facade-archive">${logpath-location}/archive/theia_facade</Property>
+		<Property name="statistics-logfile-name">theia_statistics.log</Property>
+		<Property name="statistics-archive">${logpath-location}/archive/theia_statistics</Property>
+		<Property name="ui-analytics-logfile-name">ui-analytics.log</Property>
+		<Property name="ui-analytics-archive">${logpath-location}/archive/ui-analytics</Property>
+		<Property name="userAgent-analytics-logfile-name">userAgent-analytics.log</Property>
+		<Property name="userAgent-analytics-archive">${logpath-location}/archive/userAgent-analytics</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="Console">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+		</Console>
+
+		<RollingFile name="RollingFileAppender" fileName="${logpath-location}/${logfile-name}"
+				filePattern="${archive}/${logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="TxnStateRollingFileAppender" fileName="${logpath-location}/${txnState-logfile-name}"
+				filePattern="${txnState-archive}/${txnState-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout pattern="%msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+			</Policies>
+		</RollingFile>
+
+
+		<RollingFile name="Statistics" fileName="${logpath-location}/${statistics-logfile-name}"
+				filePattern="${statistics-archive}/${statistics-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout  pattern="%msg%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="FacadeRollingFileAppender" fileName="${logpath-location}/${facade-logfile-name}"
+				filePattern="${facade-archive}/${facade-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout pattern="%msg%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="UIAnalyiticsRollingFileAppender" fileName="${logpath-location}/${ui-analytics-logfile-name}"
+				filePattern="${ui-analytics-archive}/${ui-analytics-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="UserAgenetAnalyiticsRollingFileAppender" fileName="${logpath-location}/${userAgent-analytics-logfile-name}"
+				filePattern="${userAgent-analytics-archive}/${userAgent-analytics-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<!-- 3rd party library loggers -->
+		<Logger name="org" level="WARN" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+		<Logger name="com.mchange.v2" level="ERROR" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+		<!-- Paytm application logger -->
+		<Logger name="com.paytm.pgplus" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+
+		<Logger name="com.paytm.pgplus.transactionlogger" level="DEBUG" includeLocation="true" additivity="false">
+			<AppenderRef ref="TxnStateRollingFileAppender" level="DEBUG"/>
+		</Logger>
+
+		<Logger name="STATISTICS" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="Statistics" level="DEBUG"/>
+		</Logger>
+
+		<Logger name="com.paytm.pgplus.facade" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="FacadeRollingFileAppender" level="INFO"/>
+		</Logger>
+		<Logger name="com.paytm.pgplus.theia.services.impl.UITrackServiceImpl" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="UIAnalyiticsRollingFileAppender" level="INFO" />
+		</Logger>
+
+		<Logger name="USER_AGENT_LOGGER" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="UserAgenetAnalyiticsRollingFileAppender" level="DEBUG"/>
+		</Logger>
+		<!-- Root logger -->
+		<Root level="INFO" includeLocation="true">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" level="INFO" />
+		</Root>
+	</Loggers>
+</Configuration>

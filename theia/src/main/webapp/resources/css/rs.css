@@ -1,0 +1,4 @@
+@font-face{font-family: 'WebRupee';src: url('../font/WebRupee.V2.0.eot');src: local('WebRupee'), url('../font/WebRupee.V2.0.ttf') format('truetype'),  url('../font/WebRupee.V2.0.woff') format('woff'), url('../font/WebRupee.V2.0.svg') format('svg'); font-weight:normal; font-style:normal;}
+.WebRupee {font-family:'WebRupee';}
+html>body .WebRupee {margin-right:2px;}
+html>body .WebRupee {*margin-right:0;}

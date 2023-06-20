@@ -1,0 +1,2388 @@
+/theia/api/v5/fetchPaymentOptions
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/fetchPaymentOptions
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/fetchBalanceInfo
+Daily merchant limit breached
+Repeat Request Inconsistent
+Failed to send otp
+Already accepted
+True
+False
+ClientSecret verification failed
+Success
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+System error
+Failure
+SSO Token is invalid
+Key is not found.
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Payment declined as the merchant transaction limit got breached here
+Insufficient Balance.
+This payment option is not allowed to pay with Paytm Wallet.
+Notification time expired
+Something went wrong
+Unknown client
+Invalid token
+Retry limit breached to send otp
+API is invalid (or not active)
+risk rejected
+oAuth authentication failed
+transaction is already closed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Monthly merchant limit breached
+Invalid OTP, already used OTP entered
+SECURITY_VERIFY_FAIL
+Client is not authorized to use this API
+Success Idempotent
+Card Type doesn't exist
+wrong request body
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Card has a fair success rate
+Paytm Balance
+PROCESS FAIL
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v1/login/validateOtp
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/applyPromo
+
+Please try with lower amount or different payment source. Transaction limits will revise as you continue using Paytm.
+Subvention offer checkout failure
+Could not fetch account Number
+False
+The payment failed due to duplicate order id. Please try again.
+Insufficient balance.
+Prepaid Card Transaction Amount Limit Breach
+LOYALTY_POINT_NOT_CONFIGURED
+Invalid Subs Start date
+Trans Status Abnormal
+required permission not found
+pay amount is different from order amount.
+Max Txn amount is crossed for Cust Id
+Invalid paytm ID
+Invalid Credit Card Bill Number
+Internal Processing Error
+Invalid checksum
+order is not found
+Merchant payment acceptance limit breached for this payment method. Please try using UPI or Paytm Payments bank
+This payment option is not allowed to pay with Paytm Wallet.
+Invalid order Id
+Invalid JSON Data
+Per day Txn count is crossed for Paytm
+Not able to generate token
+Invalid SavedCardID
+Invalid frequency value for mandate request
+Invalid Subs End date
+order is paid
+PerWeek Txn amount is crossed for Cust Id
+order status is closed.
+Invalid OTP, already used OTP entered
+Invalid Order ID
+Process Fail
+Invalid User Token
+Invalid Request Type
+SUCCESS
+No paymodes are configured for applied promo code
+No Pay with Paytm(PWP) support in merchant contract
+User has crossed the monthly debit limit prescribed by RBI
+Payment failed as amount entered exceeds the allowed limit. Please enter a lower amount and try again or reach out to the merchant for further assistance.
+FAILURE
+Account Holder name cannot be empty
+Account type canot be empty
+Wallet does not exist.
+Per Month Txn count is crossed for Paytm
+Invalid Payment Details
+Card has a fair success rate
+Paytm Balance
+input card index not exist
+Invalid card store flag
+SSO ID exceeds maximum transaction amount
+Invalid VPA
+Payee account does not exist
+You have entered wrong CVV for this card. Please try again with correct CVV
+Can not match a fee rate
+True
+Invalid Payment Request
+System Error, invalid param
+Merchant status disable
+order status is frozen.
+Channel is not configured with the Payment source,Auth Mode and Communication Mode.
+Per Month Txn amount is crossed for Cust Id
+Retry count breached
+Incomplete card information
+Per Month Txn amount is crossed for Merchant
+Risk Reject
+Invalid bank code
+Invalid channel
+prepaid card is not supported in merchant contract
+Invalid promo code
+Session Expired Failure
+Per day Txn amount is crossed for Paytm
+EMI Processing Failed: Invalid Params
+Invalid Expiry Date
+Payment offer checkout failure
+Insufficient Balance.
+Payment acceptance on this merchant is not available currently, please ask the merchant to contact our helpdesk team.
+Invalid Year
+Invalid payment source
+Invalid Industry Type ID
+Mandatory fields are missing.
+Invalid Card No
+Merchant Transaction Failure
+Invalid OTP
+Invalid Mobile Number
+Account Number Mismatch
+Invalid MMID
+Invalid Request Format
+Per Month Txn amount is crossed for Paytm
+Fee rate not exist
+Invalid Card Token
+Bank does not support the sent auth mode
+Max Txn amount is crossed for Merchant
+Invalid MID
+Gv consent required!
+Invalid Trans Type
+Invalid Txn Amount
+Transaction amount exceeds the limit of OTP less payments
+Process status abnormal
+You can add upto Rs.10,000 per month only in your wallet. To increase this limit, please upgrade your wallet from your paytm profile page from laptop/desktop.
+Invalid CustID
+The bank does not support any mandate mode
+order status is invalid.
+Invalid Month
+no relation found in kyb service
+Invalid Card Number
+Could not fetch ifsc code
+System Error
+Transaction could not be completed on this Merchant as merchant status is Inactive, please ask Merchant to contact Paytm helpdesk.
+Wallet Consult failed
+Txn Success
+
+/theia/api/v1/enhanced/logout/user
+Daily merchant limit breached
+Repeat Request Inconsistent
+Failed to send otp
+Already accepted
+True
+False
+ClientSecret verification failed
+Success
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+System error
+Failure
+SSO Token is invalid
+Key is not found.
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Payment declined as the merchant transaction limit got breached here
+Insufficient Balance.
+This payment option is not allowed to pay with Paytm Wallet.
+Notification time expired
+Something went wrong
+Unknown client
+Invalid token
+Retry limit breached to send otp
+API is invalid (or not active)
+risk rejected
+oAuth authentication failed
+transaction is already closed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Monthly merchant limit breached
+Invalid OTP, already used OTP entered
+SECURITY_VERIFY_FAIL
+Client is not authorized to use this API
+Success Idempotent
+Card Type doesn't exist
+wrong request body
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Card has a fair success rate
+Paytm Balance
+PROCESS FAIL
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v2/fetchPaymentOptions
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/fetchUserPaymentModeStatus
+API is invalid (or not active)
+risk rejected
+Daily merchant limit breached
+Repeat Request Inconsistent
+oAuth authentication failed
+transaction is already closed
+Failed to send otp
+Already accepted
+ClientSecret verification failed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Success
+Monthly merchant limit breached
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+SECURITY_VERIFY_FAIL
+System error
+Client is not authorized to use this API
+Success Idempotent
+Failure
+Card Type doesn't exist
+SSO Token is invalid
+wrong request body
+Key is not found.
+close an order that is already closed
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+API is not defined
+Invalid data entered by user
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment declined as the merchant transaction limit got breached here
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Notification time expired
+Something went wrong
+Unknown client
+PROCESS FAIL
+Invalid token
+Retry limit breached to send otp
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v1/login/sendOtp
+API is invalid (or not active)
+risk rejected
+Daily merchant limit breached
+Repeat Request Inconsistent
+oAuth authentication failed
+transaction is already closed
+Failed to send otp
+Already accepted
+ClientSecret verification failed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Success
+Monthly merchant limit breached
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+SECURITY_VERIFY_FAIL
+System error
+Client is not authorized to use this API
+Success Idempotent
+Failure
+Card Type doesn't exist
+SSO Token is invalid
+wrong request body
+Key is not found.
+close an order that is already closed
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+API is not defined
+Invalid data entered by user
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment declined as the merchant transaction limit got breached here
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Notification time expired
+Something went wrong
+Unknown client
+PROCESS FAIL
+Invalid token
+Retry limit breached to send otp
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v1/fetchPcfDetails
+API is invalid (or not active)
+risk rejected
+Daily merchant limit breached
+Repeat Request Inconsistent
+oAuth authentication failed
+transaction is already closed
+Failed to send otp
+Already accepted
+ClientSecret verification failed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Success
+Monthly merchant limit breached
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+SECURITY_VERIFY_FAIL
+System error
+Client is not authorized to use this API
+Success Idempotent
+Failure
+Card Type doesn't exist
+SSO Token is invalid
+wrong request body
+Key is not found.
+close an order that is already closed
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+API is not defined
+Invalid data entered by user
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment declined as the merchant transaction limit got breached here
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Notification time expired
+Something went wrong
+Unknown client
+PROCESS FAIL
+Invalid token
+Retry limit breached to send otp
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v4/login/validateOtp
+Vpa not found
+Repeat Request Inconsistent
+Duplicate request, with same orderId is already in progress
+We are unable to fetch your balance, kindly try after sometime
+Success
+Order id generation exception
+Payment not allowed presently on your card. Please try paying using other cards/options
+FAILED
+Token validation failed
+Payment failed as merchant has crossed his Monthly acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+SSO Token is invalid
+Subscription is not in authorised state
+Missing mandatory element
+Exception in payment request processing
+additionalInfo is too large
+Not able to fetch bank Details
+We are facing some issue with postpaid, please use other payment options
+Invalid Request
+Mid is invalid
+Something went wrong
+OrderId is invalid
+Not able to fetch bin Details
+Your Session has expired.
+Subscription not allowed for normal paymode
+Invalid token type
+Invalid PRN
+Duplicate payment request exception
+Invalid passcode. Please try again.
+Mid in the query param doesn't match with the Mid send in the request
+Account query failed
+Subscription Amount Limit For Wallet Breached
+EMI not configured on merchant
+Link amount or description not matched
+Invalid Promo Param
+Invalid Subscription Request
+There is a configuration mismatch for shadow request
+Request prameters are not valid
+Subscription Validation Failure.
+Success Idempotent
+Checksum provided is invalid
+KYC is not done for User.
+Txn amount is invalid
+INVALID SSO TOKEN
+Payment failed as merchant has crossed his weekly acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+Pipe character is not allowed
+No promo code currently active on the merchant
+promo code request is not valid
+Merchant Info doesn't exist
+Unable to fetch your balance. Please try a different method to complete payment
+transaction already in process
+Invalid Subs payment mode
+promo code is not valid
+Bin number is not valid
+OrderId in the query param doesn't match with the OrderId send in the request
+Payment failed as merchant has crossed his payment acceptance limit. Please ask the merchant to reach out to Paytm helpdesk
+update transaction detail failed
+System Error
+Operation is not supported
+Payment failed as merchant has crossed his daily acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+
+/theia/api/v1/vpa/validate
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/fetchNBPaymentChannels
+Daily merchant limit breached
+Repeat Request Inconsistent
+UPI_INTENT
+IMPS
+Saved VPA
+Failed to send otp
+Already accepted
+True
+ClientSecret verification failed
+Paytm Advance Account
+False
+Success
+Credit Card
+Paytm Payments Bank
+Net Banking
+Paytm Wallet
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+System error
+Failure
+HYBRID
+SSO Token is invalid
+EMI
+Key is not found.
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Saved Card
+Paytm Postpaid
+UPI LITE
+Payment declined as the merchant transaction limit got breached here
+Insufficient Balance.
+This payment option is not allowed to pay with Paytm Wallet.
+Notification time expired
+Something went wrong
+Unknown client
+Invalid token
+Retry limit breached to send otp
+Loyalty Point
+API is invalid (or not active)
+risk rejected
+EMI_DC
+oAuth authentication failed
+transaction is already closed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Monthly merchant limit breached
+Invalid OTP, already used OTP entered
+NBFC
+SECURITY_VERIFY_FAIL
+BNPL
+Client is not authorized to use this API
+Cash on Delivery (COD)
+Success Idempotent
+Bank Account (E-mandate)
+Card Type doesn't exist
+wrong request body
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+NEFT/ RTGS/ IMPS
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+BANK_EXPRESS
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+SAVED_MANDATE_BANK
+BHIM UPI
+Card has a fair success rate
+Paytm Balance
+GIFT_VOUCHER
+Paytm Bank Account
+ATM
+PROCESS FAIL
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/processTransaction
+ING Vysya Bank (now Kotak)
+City Union Bank
+LOYALTYPOINT
+Deutsche Bank
+False
+Paytm Digital Credit
+Axis EDC
+PerquLoyalty
+Compark
+AIRTEL PAYMENTS BANK
+Indian Bank
+JSB
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+Paytm Internal Bank
+Sojitra
+Bank of India
+Axis Bank
+Indian Overseas Bank
+Catholic Syrian Bank
+FISP2B
+Federal Bank
+Bajaj Finserv EMI Card
+PGI
+CeresInfotech
+Cosmos Bank
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+IDBI Bank
+CCAVENUE ADV
+HDFS Single Click
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+HDFCDIRECT
+Paytm Nebanking
+Unified Payment Interface
+FISR
+ICICI Bank
+PPBL UPI Express
+NUMBERMALL
+PAYWORLD
+AMBIKA
+BASIXSub
+J2JSoftware
+Invalid OTP, already used OTP entered
+Unified Payment Interface - PUSH Express
+Bank of Bahrain and Kuwait
+Jammu and Kashmir Bank
+EMITRA
+PPBI
+PERQULOYALTY
+BOBFSS
+SBIFSS
+Citi Direct
+FISB
+Citibank
+Central Bank of India
+PPBS
+Card has a fair success rate
+Corporation Bank
+Paytm Balance
+NET_BANKING
+Allahabad Bank
+ICICI EDC
+Advance Deposit
+FISN
+Punjab & Sind Bank
+EZETAP
+ICICIIDEBIT
+Karnataka Bank
+ICICIDIRECT
+Punjab National Bank Debit Card
+Citi Diners
+Newbank
+ICICIPAY
+True
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+DCB Bank Personal
+Paytm Payments Bank
+Paytm Wallet
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+HDFC
+Canara Bank Debit Card
+State Bank of Bikaner and Jaipur
+HDDO
+Bank of Rajasthan
+Dhanlaxmi Bank
+HSBC
+HDFC Cyber Source
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+AMEX
+Cash On Delivery
+Andhra Bank Debit Card
+Kotak Bank
+Payezee
+ABPB
+RUPAY
+Pay Cash Card
+Citibank Debit Card
+dfdfd
+State Bank Of Hyderabad
+HDFC Corporate
+Airtel Money
+Internal Paytm Transfer
+AXSD
+HDFC IDEBIT
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+FINO
+EPAISA
+PPBL UPI Collect
+GP Parsik Bank
+RBL Bank
+Standard Chartered Bank
+AXISDIRECT
+EASYPAY
+Bank of Maharashtra
+CCAVENUE
+Development BankSingapore
+
+/theia/api/v1/upiPollPage
+Insufficient Balance.
+Invalid OTP, already used OTP entered
+Card has a fair success rate
+Paytm Balance
+This payment option is not allowed to pay with Paytm Wallet.
+True
+False
+
+/theia/api/v1/enhanced/login/validate/otp
+ING Vysya Bank (now Kotak)
+LOYALTYPOINT
+IMPS
+Deutsche Bank
+Paytm Advance Account
+Paytm Digital Credit
+PerquLoyalty
+Success
+Credit Card
+One or more mandatory parameters is/are missing.
+AIRTEL PAYMENTS BANK
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+HYBRID
+Bank of India
+Axis Bank
+Indian Overseas Bank
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+CeresInfotech
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+IDBI Bank
+Unknown client
+HDFS Single Click
+Invalid token
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Card Type doesn't exist
+PPBI
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+SBIFSS
+FISB
+Citibank
+BHIM UPI
+Central Bank of India
+PPBS
+Paytm Balance
+NET_BANKING
+ATM
+ICICI EDC
+FISN
+ICICIIDEBIT
+ICICIDIRECT
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+Net Banking
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+EMI
+HDDO
+Bank of Rajasthan
+HSBC
+UPI LITE
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+Notification time expired
+Something went wrong
+EMI_DC
+Cash On Delivery
+Payezee
+Citibank Debit Card
+HDFC Corporate
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+Bank Account (E-mandate)
+wrong request body
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+EASYPAY
+CCAVENUE
+Development BankSingapore
+Debit Card
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Repeat Request Inconsistent
+City Union Bank
+Saved VPA
+False
+ClientSecret verification failed
+Axis EDC
+Invalid client status
+Compark
+Indian Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Key is not found.
+FISP2B
+Bajaj Finserv EMI Card
+PGI
+Cosmos Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+CCAVENUE ADV
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Loyalty Point
+HDFCDIRECT
+Paytm Nebanking
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+NBFC
+BNPL
+Jammu and Kashmir Bank
+EMITRA
+PERQULOYALTY
+Function parameter does not match API
+Citi Direct
+Card has a fair success rate
+Corporation Bank
+Allahabad Bank
+PROCESS FAIL
+Advance Deposit
+Punjab & Sind Bank
+EZETAP
+Karnataka Bank
+UPI_INTENT
+Daily merchant limit breached
+Punjab National Bank Debit Card
+Citi Diners
+True
+Paytm Payments Bank
+DCB Bank Personal
+Paytm Wallet
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+Dhanlaxmi Bank
+Saved Card
+Paytm Postpaid
+HDFC Cyber Source
+LocalCube
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Andhra Bank Debit Card
+Kotak Bank
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+dfdfd
+State Bank Of Hyderabad
+Airtel Money
+Cash on Delivery (COD)
+SBI
+BHARAT
+ICIO
+HDFC DEBIT EMI
+NEFT/ RTGS/ IMPS
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+BANK_EXPRESS
+Standard Chartered Bank
+Accepted Success
+SAVED_MANDATE_BANK
+Bank of Maharashtra
+GIFT_VOUCHER
+Paytm Bank Account
+
+/theia/api/v1/fetchEMIDetail
+ING Vysya Bank (now Kotak)
+Repeat Request Inconsistent
+City Union Bank
+LOYALTYPOINT
+Deutsche Bank
+ClientSecret verification failed
+Paytm Digital Credit
+Axis EDC
+Success
+PerquLoyalty
+One or more mandatory parameters is/are missing.
+Invalid client status
+Compark
+AIRTEL PAYMENTS BANK
+Indian Bank
+System error
+JSB
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+Failure
+Paytm Internal Bank
+Sojitra
+Bank of India
+Axis Bank
+Indian Overseas Bank
+Key is not found.
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+FISP2B
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+Bajaj Finserv EMI Card
+PGI
+CeresInfotech
+Cosmos Bank
+Karur Vysya Bank
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+Unknown client
+IDBI Bank
+CCAVENUE ADV
+HDFS Single Click
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Invalid token
+HDFCDIRECT
+Paytm Nebanking
+API is invalid (or not active)
+Unified Payment Interface
+risk rejected
+FISR
+ICICI Bank
+PPBL UPI Express
+NUMBERMALL
+Weekly merchant limit breached
+PAYWORLD
+order is paid
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+Client is not authorized to use this API
+Success Idempotent
+Unified Payment Interface - PUSH Express
+Bank of Bahrain and Kuwait
+Jammu and Kashmir Bank
+EMITRA
+Card Type doesn't exist
+PPBI
+PERQULOYALTY
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Function parameter does not match API
+BOBFSS
+SBIFSS
+Citi Direct
+FISB
+Citibank
+Central Bank of India
+PPBS
+Corporation Bank
+NET_BANKING
+PROCESS FAIL
+Allahabad Bank
+ICICI EDC
+Advance Deposit
+FISN
+Punjab & Sind Bank
+EZETAP
+ICICIIDEBIT
+Karnataka Bank
+Daily merchant limit breached
+ICICIDIRECT
+Punjab National Bank Debit Card
+Failed to send otp
+Citi Diners
+Newbank
+Already accepted
+ICICIPAY
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+DCB Bank Personal
+Paytm Payments Bank
+Paytm Wallet
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+HDDO
+Bank of Rajasthan
+Dhanlaxmi Bank
+HSBC
+HDFC Cyber Source
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+LocalCube
+Notification time expired
+Something went wrong
+Indian Overseas Bank Debit Card
+IndusInd Bank
+Bank of Baroda
+Retry limit breached to send otp
+OFFLINE
+AMEX
+oAuth authentication failed
+transaction is already closed
+Cash On Delivery
+Andhra Bank Debit Card
+Kotak Bank
+Payezee
+ABPB
+RUPAY
+Monthly merchant limit breached
+Pay Cash Card
+Citibank Debit Card
+dfdfd
+State Bank Of Hyderabad
+HDFC Corporate
+Airtel Money
+Internal Paytm Transfer
+SECURITY_VERIFY_FAIL
+AXSD
+HDFC IDEBIT
+SBI
+BHARAT
+wrong request body
+ICIO
+HDFC DEBIT EMI
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+RBL Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Standard Chartered Bank
+Accepted Success
+AXISDIRECT
+EASYPAY
+Bank of Maharashtra
+CCAVENUE
+Development BankSingapore
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v1/fetchBinDetail
+ING Vysya Bank (now Kotak)
+Repeat Request Inconsistent
+City Union Bank
+LOYALTYPOINT
+Deutsche Bank
+False
+Paytm Digital Credit
+ClientSecret verification failed
+Axis EDC
+PerquLoyalty
+Success
+One or more mandatory parameters is/are missing.
+Invalid client status
+Compark
+AIRTEL PAYMENTS BANK
+Indian Bank
+JSB
+System error
+ITZ Card
+Punjab Maharastra Co Bank
+IDFC Bank
+Paytm Internal Bank
+Sojitra
+Failure
+Bank of India
+Axis Bank
+Indian Overseas Bank
+Key is not found.
+close an order that is already closed
+API is not defined
+Invalid data entered by user
+Catholic Syrian Bank
+FISP2B
+Payment declined as the merchant transaction limit got breached here
+Federal Bank
+Bajaj Finserv EMI Card
+PGI
+CeresInfotech
+Cosmos Bank
+Karur Vysya Bank
+This payment option is not allowed to pay with Paytm Wallet.
+Andhra Bank
+Oriental Bank of Commerce
+Saraswat Bank
+IDBI Bank
+Unknown client
+CCAVENUE ADV
+HDFS Single Click
+paytm digital credit
+PPBLPEDC
+Royal Bank of Scotland
+Invalid token
+HDFCDIRECT
+Paytm Nebanking
+Unified Payment Interface
+API is invalid (or not active)
+FISR
+ICICI Bank
+risk rejected
+PPBL UPI Express
+NUMBERMALL
+PAYWORLD
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+AMBIKA
+BASIXSub
+J2JSoftware
+Invalid OTP, already used OTP entered
+Client is not authorized to use this API
+Unified Payment Interface - PUSH Express
+Success Idempotent
+Bank of Bahrain and Kuwait
+Jammu and Kashmir Bank
+EMITRA
+Card Type doesn't exist
+PPBI
+PERQULOYALTY
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+BOBFSS
+Function parameter does not match API
+SBIFSS
+Citi Direct
+FISB
+Citibank
+Central Bank of India
+PPBS
+Card has a fair success rate
+Corporation Bank
+Paytm Balance
+NET_BANKING
+Allahabad Bank
+ICICI EDC
+PROCESS FAIL
+Advance Deposit
+FISN
+Punjab & Sind Bank
+EZETAP
+ICICIIDEBIT
+Karnataka Bank
+Daily merchant limit breached
+ICICIDIRECT
+Punjab National Bank Debit Card
+Citi Diners
+Newbank
+Failed to send otp
+ICICIPAY
+Already accepted
+True
+AMBIKARECHARGE
+South Indian Bank
+Canara Bank
+Punjab National Bank
+Loyalty Rewardz
+DCB Bank Personal
+Paytm Payments Bank
+Paytm Wallet
+BILLDESK
+CBI TPV Bank
+ICICI EMI
+Card does not exist for given parameters
+HDFC
+Canara Bank Debit Card
+State Bank of Bikaner and Jaipur
+SSO Token is invalid
+HDDO
+Bank of Rajasthan
+Dhanlaxmi Bank
+HSBC
+HDFC Cyber Source
+Lakshmi Vilas Bank
+Dena Bank
+GIFTVOUCHER
+Insufficient Balance.
+LocalCube
+Indian Overseas Bank Debit Card
+Notification time expired
+Something went wrong
+IndusInd Bank
+Bank of Baroda
+OFFLINE
+Retry limit breached to send otp
+AMEX
+oAuth authentication failed
+transaction is already closed
+Cash On Delivery
+Andhra Bank Debit Card
+Kotak Bank
+Payezee
+ABPB
+RUPAY
+Pay Cash Card
+Monthly merchant limit breached
+Citibank Debit Card
+dfdfd
+State Bank Of Hyderabad
+HDFC Corporate
+Airtel Money
+Internal Paytm Transfer
+AXSD
+SECURITY_VERIFY_FAIL
+HDFC IDEBIT
+SBI
+BHARAT
+wrong request body
+ICIO
+HDFC DEBIT EMI
+FINO
+EPAISA
+Signature is invalid.
+PPBL UPI Collect
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+GP Parsik Bank
+RBL Bank
+Standard Chartered Bank
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+AXISDIRECT
+Accepted Success
+EASYPAY
+Bank of Maharashtra
+CCAVENUE
+Development BankSingapore
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v1/directBankRequest
+API is invalid (or not active)
+risk rejected
+Daily merchant limit breached
+Repeat Request Inconsistent
+oAuth authentication failed
+transaction is already closed
+Failed to send otp
+Already accepted
+ClientSecret verification failed
+Weekly merchant limit breached
+order is paid
+JWT is invalid
+Success
+Monthly merchant limit breached
+One or more mandatory parameters is/are missing.
+Invalid client status
+Card does not exist for given parameters
+SECURITY_VERIFY_FAIL
+System error
+Client is not authorized to use this API
+Success Idempotent
+Failure
+Card Type doesn't exist
+SSO Token is invalid
+wrong request body
+Key is not found.
+close an order that is already closed
+Payment failed because the merchant crossed their daily transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+API is not defined
+Invalid data entered by user
+Signature is invalid.
+Function parameter does not match API
+Payment failed because the merchant crossed their monthly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Illegal parameters
+Payment declined as the merchant transaction limit got breached here
+Payment failed because the merchant crossed their weekly transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+Accepted Success
+Notification time expired
+Something went wrong
+Unknown client
+PROCESS FAIL
+Invalid token
+Retry limit breached to send otp
+Payment failed because the merchant crossed their amount transaction limit for link payments. Please ask the merchant to reach out to Paytm Helpdesk
+
+/theia/api/v4/login/sendOtp
+Vpa not found
+Repeat Request Inconsistent
+Duplicate request, with same orderId is already in progress
+We are unable to fetch your balance, kindly try after sometime
+Success
+Order id generation exception
+Payment not allowed presently on your card. Please try paying using other cards/options
+FAILED
+Token validation failed
+Payment failed as merchant has crossed his Monthly acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+SSO Token is invalid
+Subscription is not in authorised state
+Missing mandatory element
+Exception in payment request processing
+additionalInfo is too large
+Not able to fetch bank Details
+We are facing some issue with postpaid, please use other payment options
+Invalid Request
+Mid is invalid
+Something went wrong
+OrderId is invalid
+Not able to fetch bin Details
+Your Session has expired.
+Subscription not allowed for normal paymode
+Invalid token type
+Invalid PRN
+Duplicate payment request exception
+Invalid passcode. Please try again.
+Mid in the query param doesn't match with the Mid send in the request
+Account query failed
+Subscription Amount Limit For Wallet Breached
+EMI not configured on merchant
+Link amount or description not matched
+Invalid Promo Param
+Invalid Subscription Request
+There is a configuration mismatch for shadow request
+Request prameters are not valid
+Subscription Validation Failure.
+Success Idempotent
+Checksum provided is invalid
+KYC is not done for User.
+Txn amount is invalid
+INVALID SSO TOKEN
+Payment failed as merchant has crossed his weekly acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+Pipe character is not allowed
+No promo code currently active on the merchant
+promo code request is not valid
+Merchant Info doesn't exist
+Unable to fetch your balance. Please try a different method to complete payment
+transaction already in process
+Invalid Subs payment mode
+promo code is not valid
+Bin number is not valid
+OrderId in the query param doesn't match with the OrderId send in the request
+Payment failed as merchant has crossed his payment acceptance limit. Please ask the merchant to reach out to Paytm helpdesk
+update transaction detail failed
+System Error
+Operation is not supported
+Payment failed as merchant has crossed his daily acceptance limit. Please ask the merchant to reach out to Paytm helpdesk.
+

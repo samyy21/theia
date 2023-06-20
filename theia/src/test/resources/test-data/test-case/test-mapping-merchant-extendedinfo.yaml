@@ -1,0 +1,63 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id4
+type : "HTTP-MOCK"
+matchers :
+  url : !!EqualMatcher
+    /mapping-service/merchant/get/extended/info/addcom24063533614140
+data :
+  resultInfo:
+    resultCode: '00000'
+    resultStatus: S
+    messaage: Success
+  merchantId: addcom24063533614140
+  extendedInfo:
+    entityId: '8738811'
+    status: ACTIVE
+    numberOfRetry: '0'
+    keySize: '16'
+    walletEnabled: 'false'
+    walletRechargeRnabled: NO_RECHARGE
+    callbackUrlEnabled: 'false'
+    sap: ''
+    comment: NA
+    s2sCallbackEnabled: 'false'
+    businessName: AddAnoopComplete
+    signedTime: '2017-03-23T00:00:00+05:30'
+    entityKey: xLLCw+GsScmUlOw6+Iez7AqW0YP1xGYZ82E+P0EUwzc=
+    isDownloaded: F
+    contactFname: Anoop
+    contactMname: ''
+    contactLname: Miglani
+    contactMobile: '7838700536'
+    eciStatus: ACTIVE
+    primaryEmail: anoop.miglani@paytm.com
+    secondaryEmail: ''
+    merchCommPref: '17'
+    secondaryFirstname: ''
+    secondaryLastname: ''
+    secondaryMobileno: ''
+    secondaryPhoneno: ''
+    invoiceEmail: ''
+    panNoBusiness: APZPM8765W
+    bankAccNo: '5424735490'
+    kycStatus: '9376503'
+    ifscCode: CITI0000002
+    panNoPersonal: APZPM8765F
+    addProofnoPersonal: ''
+    idProofnoPersonal: ''
+    signatoryName: Anoop
+    isPeonEnable: false
+    merchantName: AddCompleteAnoop
+    custCommPref: 17
+    productCode: '51051000100000000010,51051000100000000024,51051000100000000001,51051000100000000004'
+    merchRefCommPref: 64
+    custRefCommPref: 64
+    isOtpThemeEnabled: 1
+    isApiRefundAllowed: 1
+    maxAmountForComplexRefund: 0
+    peonRequestType: DEFAULT
+    peonServiceName: PeonSentServiceImpl
+    merchantWebForcedTheme: ''
+    merchantWapForcedTheme: ''
+    secureStatusEnabled: 0

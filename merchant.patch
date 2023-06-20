@@ -1,0 +1,39 @@
+diff --git a/theia/src/main/webapp/resources/js/web/merchant/functions.js b/theia/src/main/webapp/resources/js/web/merchant/functions.js
+index e9e33af5c..c041c1283 100755
+--- a/theia/src/main/webapp/resources/js/web/merchant/functions.js
++++ b/theia/src/main/webapp/resources/js/web/merchant/functions.js
+@@ -41,7 +41,7 @@ $.fn.disableButton = function(state){
+ };
+ 
+ function numberWithCommas(x) {
+-    return parseFloat(x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")).toFixed(2);
++    return x.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+ }
+ var mode="",RESTART_CHECK_JS=true;
+ $(document).ready(function(){
+diff --git a/theia/src/main/webapp/resources/js/web/merchant4/functions.js b/theia/src/main/webapp/resources/js/web/merchant4/functions.js
+index db8489e27..bb1dd13f0 100755
+--- a/theia/src/main/webapp/resources/js/web/merchant4/functions.js
++++ b/theia/src/main/webapp/resources/js/web/merchant4/functions.js
+@@ -41,7 +41,7 @@ $.fn.disableButton = function(state){
+ };
+ 
+ function numberWithCommas(x) {
+-    return parseFloat(x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")).toFixed(2);
++    return x.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+ }
+ 
+ var mode="",
+diff --git a/theia/src/main/webapp/resources/js/web/merchant5/functions.js b/theia/src/main/webapp/resources/js/web/merchant5/functions.js
+index 81de0995b..65ec3eb8a 100755
+--- a/theia/src/main/webapp/resources/js/web/merchant5/functions.js
++++ b/theia/src/main/webapp/resources/js/web/merchant5/functions.js
+@@ -41,7 +41,7 @@ $.fn.disableButton = function(state){
+ };
+ 
+ function numberWithCommas(x) {
+-	return parseFloat(x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")).toFixed(2);
++	return x.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+ }
+ var mode="",RESTART_CHECK_JS=true;
+ $(document).ready(function(){

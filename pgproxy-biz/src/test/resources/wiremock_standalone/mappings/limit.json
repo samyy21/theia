@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "ANY",
+    "urlPattern": "/alipayplus/merchant/limit/query.htm"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "body-transformer"
+    ],
+    "jsonBody": {
+"response":{"head":{"function":"alipayplus.merchant.limit.query","clientId":"2016030715243903536806","reqMsgId":"b8323a6cc260458f95a10f5b6aa5f7caadminisatorsairone97delhinet","version":"fixed-a","respTime":"2020-01-07T16:26:37+05:30"},"body":{"merchantLimitInfos":[{"amountThreshold":{"currency":"INR","value":"-1"},"lastActor":"ADMIN","limitType":"DAILY"},{"amountThreshold":{"currency":"INR","value":"-1"},"lastActor":"ADMIN","limitType":"WEEKLY"},{"amountThreshold":{"currency":"INR","value":"-1"},"lastActor":"ADMIN","limitType":"MONTHLY"}],"resultInfo":{"resultCode":"SUCCESS","resultCodeId":"00000000","resultMsg":"success","resultStatus":"S"}}},"signature":"no_signature"}
+
+  }
+}
+

@@ -1,0 +1,35 @@
+{
+  "head": {
+    "mid": "addcom24063533614140",
+    "version": "V1",
+    "requestId": "13",
+    "clientId": "121",
+    "token": "d68fad0f-4d53-4c99-b7f3-16ca9026995d2",
+    "tokenType": "TXN_TOKEN"
+  },
+  "body": {
+    "orderAmount":{
+      "currency":"INR",
+      "value":"204"
+    },
+    "deviceId" : "d1",
+    "channelId":"WEB",
+    "industryTypeId":"Retail",
+    "instrumentTypes": [
+
+      "NB_TOP5",
+      "ALL"
+    ],
+    "savedInstrumentsTypes": [
+
+      "CC",
+      "DC",
+      "ALL"
+
+    ],
+    "extendInfo": {
+      "key": "value"
+    },
+    "signature": "1"
+  }
+}

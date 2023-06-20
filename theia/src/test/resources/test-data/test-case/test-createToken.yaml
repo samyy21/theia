@@ -1,0 +1,11 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id1
+data :
+  base : /test-data/base/createToken.yaml
+  override :
+    head :
+      clientId : clientid-123
+    body :
+      state: delhi
+      checksumHash: ta808EKxbi0Z5j7Yf4uPDzFF++pVhQWzFcU29CycHEC6phEqZZFtmHj5WslSWzY6DgsPsRo1BpfCrlWs610F0VCln+FVyGKYY5dEPHptt8U=

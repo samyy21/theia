@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+	<!-- Don't forget to set system property -DLog4jContextSelector=org.apache.logging.log4j.core.async.LoggerContextSelector 
+		to make all loggers asynchronous. -->
+	<Properties>
+		<Property name="logpath-location">/paytm/logs</Property>
+		<Property name="logfile-name">tomcatsession.log</Property>
+		<Property name="archive">${logpath-location}/archive/tomcatsession</Property>
+	</Properties>
+
+	<Appenders>
+		<Console name="Console">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %x - %m%n" />
+		</Console>
+
+        <RollingFile name="RollingFileAppender" fileName="${logpath-location}/${logfile-name}"
+			filePattern="${archive}/${logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %x - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy/>
+			</Policies>
+		</RollingFile>
+		
+		<RollingFile name="TxnState" fileName="/alog/txn_states.log" filePattern="/alog/txn_states-%d{yyyy-MM-dd-HH}.log">
+			<PatternLayout  pattern="%msg%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<!-- 3rd party library loggers -->
+		<Logger name="org" level="WARN" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+		<Logger name="com.mchange.v2" level="ERROR" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+		<!-- Paytm application logger -->
+		<Logger name="com.paytm.pgplus" level="DEBUG" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</Logger>
+
+		<Logger name="com.paytm.pgplus.transactionlogger" level="INFO" includeLocation="true">
+			<AppenderRef ref="TxnState" level="INFO"/>
+		</Logger>
+
+		<!-- Root logger -->
+		<Root level="DEBUG" includeLocation="true">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" level="INFO" />
+		</Root>
+	</Loggers>
+</Configuration>

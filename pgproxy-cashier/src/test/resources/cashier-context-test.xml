@@ -1,0 +1,118 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/jdbc
+        http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd">
+ 	
+		<context:component-scan base-package="com.paytm.pgplus"/>
+ 		<context:annotation-config/>
+		
+		<import resource="classpath:Client-Context.xml"/>
+		<import resource="classpath:savedcardclient-context.xml"/>
+ 		<import resource="classpath:LooperClientContext.xml"/>
+
+	<context:property-placeholder location="classpath:properties/cashier_test.properties" ignore-unresolvable="true"/>
+
+	<bean id="dataSource"
+		  class="org.h2.jdbcx.JdbcDataSource" >
+		<property name="URL" value="jdbc:h2:/tmp/cashier_test2db;MODE=MySQL"/>
+		<property name="user" value="user"/>
+		<property name="password" value="password"/>
+	</bean>
+
+	<!-- Configure Properties File -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="cashier-properties">
+		<property name="locations">
+			<list>
+				<value>classpath:cashier.properties</value>
+			</list>
+		</property>
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+ 
+	<bean id="cashierWorkflowFactory" class="org.springframework.beans.factory.config.ServiceLocatorFactoryBean">
+		<property name="serviceLocatorInterface" value="com.paytm.pgplus.cashier.workflow.util.CashierWorkflowFactory"/>
+	</bean>
+	
+	<alias alias="ISOCARD" name="BankcardWorkflow"/>
+	<alias alias="IMPS" name="IMPSWorkflow"/>
+	<alias alias="COD" name="CODWorkflow"/>
+	<alias alias="ATM" name="ATMWorkflow"/>
+	<alias alias="NB" name="NetbankingWorkflow"/>
+	<alias alias="SUBSCRIPTION" name="SubscriptionWorkflow"/>
+	<alias alias="WALLET" name="WalletWorkflow"/>
+	<alias alias="SEAMLESS" name="SeamlessWorkflow"/>
+	<alias alias="ADD_MONEY_NB" name="AddMoneyNetbankingWorkflow"/>
+	<alias alias="ADD_MONEY_ISOCARD" name="AddMoneyBankcardWorkflow"/>
+	<alias alias="ADD_MONEY_IMPS" name="AddMoneyIMPSWorkflow"/>
+	<alias alias="ADD_MONEY_ATM" name="AddMoneyATMWorkflow"/>
+	<alias alias="ADD_MONEY_UPI" name="AddMoneyUPIWorkflow" />
+	<alias alias="UPI" name="UPIWorkflow"/>
+	<alias alias="DIRECT_BANK_CARD_PAYMENT" name="DirectBankCardPaymentWorkflow"/>
+	<alias alias="RISK_POLICY_CONSULT" name="RiskPaymentWorkflow"/>
+
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+
+	</bean>
+
+	<bean id="h2WebServer" class="org.h2.tools.Server" factory-method="createWebServer"
+		  init-method="start" destroy-method="stop"   lazy-init="true" >
+		<constructor-arg value="-web,-webAllowOthers,-webDaemon,-webPort,8089"/>
+	</bean>
+
+	<bean id="slaveSessionFactory"
+		  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan" value="com.paytm.pgplus.datasource"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+				<prop key="hibernate.connection.CharSet">utf8</prop>
+				<prop key="hibernate.connection.characterEncoding">utf8</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop>
+				<prop key="hibernate.id.new_generator_mappings">true</prop>
+				<prop key="javax.persistence.validation.mode">none</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="masterSessionFactory"
+		  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan" value="com.paytm.pgplus.datasource"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+				<prop key="hibernate.connection.CharSet">utf8</prop>
+				<prop key="hibernate.connection.characterEncoding">utf8</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop>
+				<prop key="hibernate.id.new_generator_mappings">true</prop>
+				<prop key="javax.persistence.validation.mode">none</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="legacySessionFactory"
+		  class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan" value="com.paytm.pgplus.datasource"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
+				<prop key="hibernate.connection.CharSet">utf8</prop>
+				<prop key="hibernate.connection.characterEncoding">utf8</prop>
+				<prop key="hibernate.connection.useUnicode">true</prop>
+				<prop key="hibernate.id.new_generator_mappings">true</prop>
+				<prop key="javax.persistence.validation.mode">none</prop>
+			</props>
+		</property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,12 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id3
+type : "HTTP-MOCK"
+matchers :
+  url : !!EqualMatcher
+    /mapping-service/get/fetchEntityIgnoreParams/8738811
+data :
+  paramsList: []
+  successfullyProcessed: true
+  entityId: 8738811
+

@@ -1,0 +1,793 @@
+{
+  "payMethodViews": [
+    {
+      "payMethod": "CREDIT_CARD",
+      "payChannelOptionViews": [
+        {
+          "payOption": "CREDIT_CARD_VISA",
+          "enableStatus": true,
+          "instId": "VISA",
+          "instName": "Visa Inc.",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_MASTER",
+          "enableStatus": true,
+          "instId": "MASTER",
+          "instName": "MasterCard Inc.",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_MAESTRO",
+          "enableStatus": true,
+          "instId": "MAESTRO",
+          "instName": "Maestro",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_RUPAY",
+          "enableStatus": true,
+          "instId": "RUPAY",
+          "instName": "RuPay",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_AMEX",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "AMEX",
+          "instName": "American Express",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_DINERS",
+          "enableStatus": true,
+          "instId": "DINERS",
+          "instName": "Diners Club International",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "CREDIT_CARD_DISCOVER",
+          "enableStatus": true,
+          "instId": "DISCOVER",
+          "instName": "Discover Inc.",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "supportCountries": [
+            "IN"
+          ],
+          "extendInfo": {}
+        }
+      ],
+      "payCardOptionViews": [],
+      "riskResult": {}
+    },
+    {
+      "payMethod": "NET_BANKING",
+      "payChannelOptionViews": [
+        {
+          "payOption": "NET_BANKING_SBI",
+          "enableStatus": true,
+          "instId": "SBI",
+          "instName": "State Bank of India",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_HDFC",
+          "enableStatus": true,
+          "instId": "HDFC",
+          "instName": "HDFC Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_ICICI",
+          "enableStatus": true,
+          "instId": "ICICI",
+          "instName": "ICICI Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_AXIS",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "AXIS",
+          "instName": "Axis Bank Limited",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_ALH",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "ALH",
+          "instName": "Allahabad Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_PNB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "PNB",
+          "instName": "Punjab National Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_NKMB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "NKMB",
+          "instName": "Kotak Mahindra Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_ABPB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "ABPB",
+          "instName": "Aditya Birla Payments Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_ANDB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "ANDB",
+          "instName": "Andhra Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_BBK",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "BBK",
+          "instName": "Bank of Bahrain and Kuwait",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_BOB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "BOB",
+          "instName": "Bank of Baroda",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_BOI",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "BOI",
+          "instName": "Bank of India",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_BOM",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "BOM",
+          "instName": "Bank of Maharashtra",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_CANARA",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "CANARA",
+          "instName": "Canara Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_CBI",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "CBI",
+          "instName": "Central Bank of India",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_CSB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "CSB",
+          "instName": "Catholic Syrian Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_CITIUB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "CITIUB",
+          "instName": "City Union Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_CORP",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "CORP",
+          "instName": "Corporation Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_COSMOS",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "COSMOS",
+          "instName": "Cosmos Co-operative Bank Ltd",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_DEUTS",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "DEUTS",
+          "instName": "Deutsche Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_DCB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "DCB",
+          "instName": "Development Credit Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_DENA",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "DENA",
+          "instName": "Dena Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_IDBI",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "IDBI",
+          "instName": "IDBI Bank (Industrial Development Bank of India)",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_IDFC",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "IDFC",
+          "instName": "IDFC Bank Ltd.",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_INDB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "INDB",
+          "instName": "IndusInd Bank Limited",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_IOB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "IOB",
+          "instName": "Indian Overseas Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_INDS",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "INDS",
+          "instName": "IndusInd Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_ING",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "ING",
+          "instName": "ING Vysya Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_JKB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "JKB",
+          "instName": "Jammu and Kashmir Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_KTKB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "KTKB",
+          "instName": "Karnataka Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_KVB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "KVB",
+          "instName": "Karur Vysya Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_LVB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "LVB",
+          "instName": "Lakshmi Vilas Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_OBPRF",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "OBPRF",
+          "instName": "Oriental Bank of Commerce",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_PPBL",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "PPBL",
+          "instName": "Paytm Payments Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_PSB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "PSB",
+          "instName": "Punjab and Sind Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_RATN",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "RATN",
+          "instName": "RBL Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SVB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SVB",
+          "instName": "Shamrao Vithal Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_STB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "STB",
+          "instName": "Saraswat Co-operative Bank Ltd",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SIB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SIB",
+          "instName": "South Indian Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SCB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SCB",
+          "instName": "Standard Chartered Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SBJ",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SBJ",
+          "instName": "State Bank of Bikaner \u0026 Jaipur",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SBH",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SBH",
+          "instName": "State Bank of Hyderabad",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SBM",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SBM",
+          "instName": "State Bank of Mysore",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SBOP",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SBOP",
+          "instName": "State Bank of Patiala",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SBT",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SBT",
+          "instName": "State Bank of Travancore",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SYNBK",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SYNBK",
+          "instName": "Syndicate Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_TNMB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "TNMB",
+          "instName": "Tamilnad Mercentile Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_UNI",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "UNI",
+          "instName": "Union Bank of India",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_UBI",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "UBI",
+          "instName": "United Bank of India",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_VJYA",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "VJYA",
+          "instName": "Vijaya Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_YES",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "YES",
+          "instName": "Yes Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_UCO",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "UCO",
+          "instName": "UCO Bank (United Commercial Bank)",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_BHARAT",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "BHARAT",
+          "instName": "Bharat Bank",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_JSB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "JSB",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_SVC",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "SVC",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_GPPB",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "GPPB",
+          "instName": "GP Parsik BANK",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "NET_BANKING_IATN",
+          "enableStatus": false,
+          "disableReason": "CHANNEL_NOT_AVAILABLE",
+          "instId": "IATN",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        }
+      ],
+      "payCardOptionViews": [],
+      "riskResult": {}
+    },
+    {
+      "payMethod": "IMPS",
+      "payChannelOptionViews": [
+        {
+          "payOption": "IMPS",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "IMPS",
+          "instName": "Immediate Payment Service",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        }
+      ],
+      "payCardOptionViews": [],
+      "riskResult": {}
+    },
+    {
+      "payMethod": "EMI",
+      "payChannelOptionViews": [
+        {
+          "payOption": "EMI_HDFC",
+          "enableStatus": true,
+          "instId": "HDFC",
+          "instName": "HDFC Bank",
+          "emiChannelInfos": [
+            {
+              "interestRate": "3.0",
+              "ofMonths": "3",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "3.0",
+              "ofMonths": "6",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "4.0",
+              "ofMonths": "9",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "4.0",
+              "ofMonths": "12",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            }
+          ],
+          "emiHybridChannelInfos": [
+            {
+              "interestRate": "3.0",
+              "ofMonths": "3",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "3.0",
+              "ofMonths": "6",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "4.0",
+              "ofMonths": "9",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            },
+            {
+              "interestRate": "4.0",
+              "ofMonths": "12",
+              "minAmount": "200",
+              "maxAmount": "10000",
+              "cardAcquiringMode": "ONUS",
+              "perInstallment": "0"
+            }
+          ],
+          "extendInfo": {}
+        }
+      ],
+      "payCardOptionViews": [],
+      "riskResult": {}
+    },
+    {
+      "payMethod": "UPI",
+      "payChannelOptionViews": [
+        {
+          "payOption": "UPI",
+          "enableStatus": true,
+          "instId": "UPI",
+          "instName": "Unified Payment Interace",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        },
+        {
+          "payOption": "UPI_PUSH",
+          "enableStatus": false,
+          "disableReason": "SERVICE_INST_NOT_EXIST",
+          "instId": "UPIPUSH",
+          "instName": "Unified Payment Interface - PUSH",
+          "emiChannelInfos": [],
+          "emiHybridChannelInfos": [],
+          "extendInfo": {}
+        }
+      ],
+      "payCardOptionViews": [],
+      "riskResult": {}
+    }
+  ],
+  "chargePayer": false,
+  "extendInfo": {
+    "isSupportAddPay": "Y"
+  }
+}

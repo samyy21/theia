@@ -1,0 +1,27 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id2
+type : "HTTP-MOCK"
+matchers :
+  url : !!EqualMatcher
+    /v2/user?fetch_strategy=BASIC,TOKEN,KYC_STATUS,USER_ATTRIBUTE,USER_TYPE
+data :
+  accessToken:
+      expiryTime: '1510506531138'
+      clientId: testclient
+      scopes: [wallet]
+      userId: 1106991899
+  basicInfo:
+      phone: '9599711105'
+      countryCode: '91'
+      firstName: manish
+      lastName: mishra
+      displayName: manish
+  userAttributeInfo:
+      CREDIT_CARD: 'true'
+  userTypes:
+      - BANK_CUSTOMER
+      - PPB_CUSTOMER
+  isKyc: true
+
+

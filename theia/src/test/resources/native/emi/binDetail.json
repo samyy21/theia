@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "bin": 346596,
+  "isIndian": true,
+  "bank": "Bank",
+  "cardType": "CREDIT_CARD",
+  "cardName": "HDBC_BANK",
+  "bankCode": "BBK",
+  "isActive": true,
+  "iDebitEnabled": false,
+  "instId":"HDFC"
+}

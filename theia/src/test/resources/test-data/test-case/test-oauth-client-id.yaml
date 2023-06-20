@@ -1,0 +1,12 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id5
+type : "HTTP-MOCK"
+matchers :
+  url : !!EqualMatcher
+    /mapping-service/get/paytmproperties/oauth.client.id
+data :
+  name: oauth.client.id
+  value: paytm-pg-client-staging
+
+

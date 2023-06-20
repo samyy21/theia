@@ -1,0 +1,729 @@
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+/*Webrupee*/
+@font-face{font-family: 'WebRupee';src: url('../../../fonts/WebRupee.V2.1.eot');src: local('WebRupee'), url('../../../fonts/WebRupee.V2.1.ttf') format('truetype'),  url('../../../fonts/WebRupee.V2.1.woff') format('woff'), url('../../../fonts/WebRupee.V2.1.svg') format('svg');font-weight: normal;font-style: normal;}
+.WebRupee{font-family: 'WebRupee';}
+
+
+body, p{margin:0; padding:0; font-family: OpenSans}
+img{border:none;}
+
+a{text-decoration:none}
+select{background:#ffffff;}
+input[type="text"], input[type="tel"], input[type="password"], select{border:#ebebeb solid 1px;font-size:medium; font-weight:500; font-family:OpenSans;width:80%; padding-top:5px; padding-bottom:5px; padding-right:5px;background-color:#ffffff;}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="password"]:focus{outline:none; box-shadow: none;}
+/*Header*/
+.header{
+	color:#222; border-bottom:#ebebeb solid 1px; padding:10px 0px; font-weight:400
+}
+
+input[type=submit] {
+  -webkit-appearance: none;
+
+}
+.logo{
+/* 	background: #f0f0f0; */
+/* 	border-bottom: #bfbfbf solid 1px; */
+	padding: 10px 10px 3px 10px;
+}
+
+#logo-img {
+	height : 28px;
+	margin : auto;
+	width : 70px;	
+	margin-bottom: 4px;
+}
+
+ input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label {
+    display:inline-block;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    background:url("../../../images/wap/merchantLow3/ic-unchecked.png") no-repeat;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("../../../images/wap/merchantLow3/ic-checked.png") no-repeat;
+    display:inline-block;
+    background-position-y: 2px;
+    
+}
+.bank-block{
+	width: 32.6%;
+	float: left;
+	border: 1px solid #ebebeb;
+	height: 30%;
+	/* hack To remove double borders */
+/* 	margin-left: -1px; */
+/* 	margin-top: -1px; */
+	border-collapse: collapse;
+	text-align: center;
+}
+.bank-block-selected{
+	border: 1px solid #00baf2;
+	margin: 0;
+
+}
+.single-bank{
+	width: 100%;
+    float: left;
+    padding: 15px 0;
+}
+.bank-logo-nb-new{
+	display: block;
+    max-width: 150px;
+    height: 56px;
+    margin: 0 auto;
+}
+.none-border{
+	border:none;
+}
+.back-btn {
+	padding-top : 5px;
+}
+
+/*Common*/
+.fl{float:left;}
+.fr{float:right;}
+.pr5{padding-right: 5px;}
+.pr15{padding-right: 15px;}
+.positionYExpYear{background-position: right 13px !important;}
+.clear{clear:both;}
+.divider{border-bottom:#666 solid 1px;}
+.dotted{border-bottom:#000 dotted 1px;}
+.right{text-align:right;}
+p a, a.tips{color: #00baf2; font:500 small OpenSans;
+    float: right;
+/*     margin-right: 12px; */
+    padding-top: 5px;
+    font-size: 12px;
+}
+p a:hover{color: #005580; font:500 small OpenSans;}
+.center{text-align:center;}
+
+/*Rows*/
+.row{padding:5px 7px;color:#222; font:14px OpenSans;}
+.row-dot{padding:5px 7px; color:#222; padding:10px 7px; font:12px OpenSans;}
+.amount-bal-ptm{font-size: 15px; font-weight: 600;}
+/*Margin/Padding*/
+.pt20{padding-top:20px;}
+.pad{padding:15px 20px}
+.pt7{padding-top:7px;}
+.mr7{margin-right:7px;}
+.mr5{margin-right:5px;}
+.pad10{padding:10px 10px 0 20px;}
+.ml20{margin-left:20px;}
+.ml25{margin-left: 25px;}
+.mr10{margin-right: 10px;}
+.mt15{ margin-top: 15px;}
+.mt20{ margin-top: 20px;}
+.mt35{margin-top: 35px;}
+.mb15{margin-bottom: 15px;}
+.mr20{margin-right:20px !important;}
+.ml15{margin-left:15px !important;}
+.ml30p{margin-left:30%;}
+.ml7{margin-left: 7px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt30{margin-top:30px;}
+.ml50{margin-left: -50px}
+.ml5{ margin-left: 5px;}
+.mt7{margin-top: 7px;}
+/*Headings*/
+.heading{
+	padding: 10px 7px;
+    font: 14px OpenSans;
+    margin-top: 10px;
+    margin-left: 21px;
+    font-weight: 600;
+    height: 19px;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222
+}
+.bold-font-600{
+	font-weight: 600;
+}
+.sc-row{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.radio-item {
+  display: block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+.radio-item input[type='radio'] {
+  display: none;
+}
+.radio-item label:before {
+  content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 18px 0 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 11px;
+    border: 2px solid #999;
+    background-color: transparent;
+}
+.radio-item input[type=radio]:checked +label:before {
+   border: 2px solid #00b9f5;
+}
+.radio-item input[type=radio]:checked + label:after {
+  	border-radius: 11px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    content: " ";
+    display: block;
+    background: #00b9f5;
+    color: #999;
+}
+
+.color-label{
+	color: #666;
+}
+.color-fields{
+	color: #999;
+}
+.bank-name-sc{
+	margin-left: 40px;
+    padding-top: 10px;
+}
+/* material design css */
+
+.group-text{ 
+  position:relative; 
+  margin-bottom:10px; 
+  margin-right: 10px;
+}
+
+.group-label-text{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+/* active state */
+input:focus ~ label.group-label-text, input:valid ~ label.group-label-text{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* bottom bars */
+.bar-text {
+	position:relative; display:block; width:160%; 
+}
+.bar-text:before, .bar-text:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar-text:before {
+  left:50%;
+}
+.bar-text:after {
+  right:50%; 
+}
+/* active state */
+.group input:focus ~ .bar-text:before, input:focus ~ .bar-text:after {
+  width:50%;
+}
+
+.paytmCash-balance{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+	
+}
+/* HIGHLIGHTER ================================== */
+.highlight-text{
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight-text {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+/* end of material design css */
+.Complete-Payment {
+  height: 26px;
+  font-family: OpenSans;
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #222222;
+  padding-top: 5px;
+}
+.payment-balance-msg {
+  background-color: #f9f9f9;
+  padding:15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.payment-balance-pay-class{
+  height: 26px;
+  font-family: OpenSans;
+  font-size: 19px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #222222;
+  margin:auto;
+}
+.pay-mode-link{
+    height: 50px;
+}
+.pay-modes-link{
+    background-color: #f9f9f9;
+    border: solid 0.5px #ebebeb;
+    padding: 5px;
+    margin-top: -1px;
+    height: 50px;
+}
+.bottom_border{border-bottom: #ebebeb solid 1px; font-weight:bold;}
+
+/*Bottom Links*/
+.bottom-link, .bottom-link-last{display:block;font:500 small OpenSans, Arial, Helvetica, sans-serif; padding:10px 15px;}
+a .bottom-link,  a .bottom-link-last{color:#222;}
+a:hover .bottom-link, a:hover .bottom-link-last{color:#005580;}
+.bottom-link-last{border-bottom:none;}
+.bottom-link{
+	font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #222222;
+    height: 19px;
+    margin-top: 5px;
+}
+/*Form elements*/
+.blue-btn{
+	background-color: #00baf2;
+	border: 0;
+	color: #fff;
+	font: 18px medium OpenSans,Arial,Helvetica,sans-serif;
+	padding: 8px 5px;
+	width: 100%;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding-bottom: 13px;
+	font-weight: 600;
+}
+.blue-btn:before{
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00b9f5;
+  background: url('/theia/resources/images/wap/merchantLow3/lock-copy.png') no-repeat;
+}
+
+.pay-now-btn{
+	background-color: #00baf2;
+	border: 0;
+	color: #fff;
+	font: 18px medium Arial,Helvetica,sans-serif;
+	padding: 8px 5px;
+	width: 97%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	height: 50px;
+}
+
+.sc-special-btn{
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	width: 96%;
+	border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 50px;
+}
+.SC-tab{
+	padding-bottom: 1px;
+}
+
+.gry-btn{
+	background-color: #999999;
+/* 	background-image: -moz-linear-gradient(top, #B6B6B6, #848485); */
+/* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B6B6B6), to(#848485)); background-image: -webkit-linear-gradient(top, #B6B6B6, #848485); background-image: -o-linear-gradient(top, #B6B6B6, #848485); */
+/* background-image: linear-gradient(to bottom, #B6B6B6, #848485); background-repeat: repeat-x; border-color: #848485 #848485 #A9A9A9; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#848485', endColorstr='#848485', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); color:#ffffff;font: 700 OpenSans; padding: 8px 5px;width: 80%; */
+
+} 
+.low-success-rate{
+	color: #222 !important;
+	font-size: 11px !important;
+	line-height: 1.45;
+}
+.gry-btn{
+	background-color: #999999;
+	border: 0;
+	color: #ebebeb;
+	font: 18px medium OpenSans,Arial,Helvetica,sans-serif;
+	padding: 8px 5px;
+	font-weight: 600;
+	width: 97%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-bottom: 13px;
+	margin-top: 5px;
+}
+.gry-btn:before{
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+  background: url('/theia/resources/images/wap/merchantLow3/lock-disabled.png') no-repeat;
+}
+.all-input{
+	border: none !important;
+	border-bottom: 1px solid #ebebeb !important;
+	font-size: 14px !important;
+    padding-bottom: 10px !important;
+    
+}
+.all-input:focus{
+	outline: none;
+	border-bottom: 1px solid #ebebeb !important;
+	color: #222 !important;
+}
+.cvv-input{
+	width:92px !important;
+	border:none !important;
+	border-bottom: 1px solid #ebebeb !important;
+	font-size: 14px;
+	
+}
+.cvv-input:focus{
+	outline: none;
+	border-bottom: 1px solid #ebebeb !important;
+}
+.cvv-after-img{
+	float: right;
+    margin: 0;
+    margin-right: -120px;
+    margin-top: 12px;
+}
+.common-conv{
+	height: 32px;
+    font-family: OpenSans;
+    font-size: 11px;
+    line-height: 1.45;
+    text-align: left;
+    color: #222222;
+}
+.post-conv-inclusion{
+	float: left;
+	clear: both;
+    border-radius: 4px;
+    background-color: #fdfbd3;
+    padding: 10px;
+    margin: 10px 0;
+}
+.VISA-sc{ background-image:url(../../../images/wap/merchantLow3/visa-new.png); background-size: 40px 15px;background-repeat: no-repeat;}
+.MASTER-sc{ background-image:url(../../../images/wap/merchantLow3/master-new.png);background-size: 40px 15px;background-repeat: no-repeat;}
+.DINERS-sc{ background-image:url(../../../images/wap/merchantLow3/diners-new.png);	background-repeat: no-repeat;}
+.SBIME-sc{ background-image:url(../../../images/wap/merchantLow3/maestro.png); background-repeat: no-repeat;}
+.MAESTRO-sc{ background-image:url(../../../images/wap/merchantLow3/maestro.png); background-repeat: no-repeat;}
+.AMEX-sc{ background-image:url(../../../images/wap/merchantLow3/amex.jpg); background-repeat: no-repeat;}
+.RUPAY-sc{ background-image:url(../../../images/wap/merchantLow3/rupay.png); background-repeat: no-repeat;width:55px; padding-right: 57px !important;}
+.sc-icon{
+	width: 34px;
+    height: 28px;
+    background-position: center;
+    float: right;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+.visa{ background-image:url(../../../images/wap/merchantLow3/visa-new.png); background-repeat: no-repeat;background-position:99% 5px;}
+.master{ background-image:url(../../../images/wap/merchantLow3/master-new.png); background-repeat: no-repeat;background-position:99% 1px;background-size: 14%;}
+.rupay{ background-image:url(../../../images/wap/merchantLow3/rupay-new.png); background-repeat: no-repeat;background-position:99% 1px;}
+.amex{ background-image:url(../../../images/wap/merchantLow3/amex-new.png); background-repeat: no-repeat;background-position:99% -1px;}
+.maestro{ background-image:url(../../../images/wap/merchantLow3/maestro.png); background-repeat: no-repeat;background-position:99% 5px;}
+.diners{ background-image:url(../../../images/wap/merchantLow3/diners-new.png); background-repeat: no-repeat;background-position:99% 5px;}
+.discover{ background-image:url(../../../images/wap/merchantLow3/discover.png); background-repeat: no-repeat;background-position:99% 5px;}
+.bajajfn{ background-image:url(../../../images/wap/merchantLow3/bajajfn.png); background-repeat: no-repeat;background-position:99% 5px;}}
+.medium-input {
+	width: 74px !important;
+}
+.expSelect{width:100%}
+.fullWalletDeduct{
+	margin: 0px 7px;
+	margin-top: 15px;
+}
+
+/*Footer*/
+.footer{ float:left; width: 100%; margin-top:50px; margin-bottom: 15px;}
+
+/*Error /Failure*/
+.failure{background-color: #fdfbd3; padding:10px; margin:20px 7px 0;color:#999; font:500 medium OpenSans,Arial, Helvetica, sans-serif;font-size: 10px;
+    border-radius: 4px;
+ }
+.danger {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+.error-txt{color:#b53b3b; font-size:11px;}
+input.error, select.error{border:1px solid #b53b3b;}
+
+/*Lock*/
+.small{font:500 small Arial, Helvetica, sans-serif; color:#9a9999; padding-left:5px; width:85%}
+.lock-display{
+	font-family: OpenSans;
+	font-size: 10px;
+	color:#999999; 
+	padding-left:15px; 
+	
+}
+.maestro-display-small{
+	font-family: OpenSans;
+	font-size: 11px;
+	color:#222; 
+	padding:10px;
+	line-height: 1.45; 
+}
+.maestro-rectangle{
+  border-radius: 4px;
+  background-color: #fdfbd3;
+  margin-top: 20px;
+  float: left;
+  margin-bottom: 10px;
+  margin-left: -2px;
+}
+.saved-card-label{
+	color: #666;
+	font-size: 14px;
+}
+.image{width:17px;}
+.deleteCard{
+	font-size:small;color:#2cbdfc; text-decoration:underline; border:none; background-color:#fff; cursor:pointer;
+	display : none;
+}
+.deleteCard:hover{color:#555;}
+.bal{margin-left:30px; font-size:12px; color:#666}
+
+.user-view {padding :10px;}
+
+.blue {
+	color : #00baf2;
+}
+
+#show-other-options {
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+	text-align: right;
+	padding: 10px 10px 0px 0px;
+}
+
+#partner-logos {
+	width: 80%;
+    height: 55px;
+	margin : 0 auto;
+}
+
+.hide {
+	display : none;
+}
+
+.alert {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.alert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+}
+
+.alert-danger {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+
+.emi-plans {
+	list-style : none;	
+	padding : 0px;
+	overflow : hidden;
+	    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 15px;
+}
+.special-input-select{
+	-webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ background: white url('/theia/resources/images/wap/merchantLow3/close.png') no-repeat;
+ background-size: 9px 6px;
+ background-position: right 18px;
+}
+
+.emi-plans li{
+	width: 28%;
+	text-align: right;
+	float: left;
+	border: 1px solid #ebebeb;
+	padding: 5px;
+	margin: 0px 3px 3px 0px;
+}
+
+.emi-amt {
+	    font-size: 12px;
+    line-height: 23px;
+    color: #222;
+    font-weight: 600;
+}
+
+.emi-month {
+	font-size: 12px;
+	line-height: 20px;
+	color: #222;
+}
+
+.emi-interest {
+	font-size : 12px;
+	color: #666;
+}
+.rel_pos{position:relative;}
+.abs_pos{position:absolute; right: 20px; top:8px}
+#otherText{font-size:14px;}
+.bal{margin-top:0px;}
+.nbTab{
+	width:81%; 
+	padding:5px; 
+	border:1px solid #ebebeb; 
+	color:#000; 
+	font-size:12px; 
+	display:block; 
+	margin:5px 0;
+	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	}
+	.msgTxtBox{width:85%; float:left;}
+	.smltxt{font-size:14px; font-weight:bold; }
+.light-blue-strip{
+	height: 10px;
+	background-color: #00b9f5;
+	width: 100%;
+	float:left;
+}
+
+.dark-blue-strip{
+	float:left;
+	height: 10px;
+	background-color: #012b72;
+	width: 100%;
+}
+
+/*For Paytm CC*/
+
+#paytmIciciDigital{    overflow: hidden;
+    padding: 23px;}
+.removeBoxSizing{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width:100% !important;
+}
+.bottomBorder{border: none !important;
+    border-bottom: 1px solid #ebebeb !important;}

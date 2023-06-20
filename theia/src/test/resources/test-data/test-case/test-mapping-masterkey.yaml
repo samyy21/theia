@@ -1,0 +1,12 @@
+!!com.paytm.pgplus.theia.util.TestData
+testId: SIMPLE_TEST
+dataId: id5
+type : "HTTP-MOCK"
+matchers :
+  url : !!EqualMatcher
+    /mapping-service/get/keyfiledata/name/MASTER_KEY
+data :
+  id: 1
+  name: MASTER_KEY
+  value: 12345678
+  status: true

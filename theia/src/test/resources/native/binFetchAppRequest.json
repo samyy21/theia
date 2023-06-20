@@ -1,0 +1,23 @@
+{
+  "head": {
+    "version": "M",
+    "mid": "M",
+    "requestTimestamp": "M",
+    "requestId": "M",
+    "clientId": "",
+    "token": "M",
+    "tokenType": "TXN_TOKEN"
+
+  },
+  "body": {
+    "extendInfo": {
+      "key": "value"
+    },
+    "signature": "",
+    "bin": "346596",
+    "orderId": "M",
+    "channelId":"SYSTEM",
+    "deviceId":"M",
+    "industryTypeId":""
+  }
+}

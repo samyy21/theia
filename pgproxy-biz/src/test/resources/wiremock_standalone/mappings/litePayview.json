@@ -1,0 +1,175 @@
+{
+  "request": {
+    "method": "ANY",
+    "urlPattern": "/alipayplus/payment/cashier/litepayview/consult.htm"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "body-transformer"
+    ],
+    "jsonBody": {
+      "response": {
+        "head": {
+          "function": "alipayplus.payment.cashier.litepayview.consult",
+          "accessToken": "accessToken",
+          "clientId": "2016030715243903536806",
+          "reqMsgId": "201706151494557042704lite",
+          "version": "fixed-a",
+          "respTime": "2019-11-15T18:41:29+08:00"
+        },
+        "body": {
+          "chargePayer": "true",
+          "payMethodViews": [
+            {
+              "payChannelOptionViews": [
+                {
+                  "enableStatus": "true",
+                  "oneClickChannel": "false",
+                  "payMethod": "BALANCE",
+                  "payOption": "BALANCE"
+                }
+              ],
+              "payMethod": "BALANCE"
+            },
+            {
+              "payChannelOptionViews": [
+                {
+                  "enableStatus": "true",
+                  "instId": "VISA",
+                  "instName": "Visa Inc.",
+                  "payMethod": "CREDIT_CARD",
+                  "payOption": "CREDIT_CARD_VISA",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "MASTER",
+                  "instName": "MasterCard Inc.",
+                  "payMethod": "CREDIT_CARD",
+                  "payOption": "CREDIT_CARD_MASTER",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "MAESTRO",
+                  "instName": "Maestro",
+                  "payMethod": "CREDIT_CARD",
+                  "payOption": "CREDIT_CARD_MAESTRO",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "RUPAY",
+                  "instName": "RuPay",
+                  "payMethod": "CREDIT_CARD",
+                  "payOption": "CREDIT_CARD_RUPAY",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                }
+              ],
+              "payCardOptionViews": [
+                {
+                  "cardIndexNo": "85246e15131d44feb36c80e1a1e35",
+                  "cardNoLength": "16",
+                  "maskedCardNo": "472642******2167",
+                  "holderName": {
+                    "firstName": "firstName",
+                    "lastName": "lastName"
+                  },
+                  "assetType": "SAVINGS_ACCT",
+                  "cardScheme": "VISA",
+                  "defaultCard": true,
+                  "expiryYear": "2021",
+                  "expiryMonth": "05",
+                  "lastSuccessfulUsedTime": "2015-04-05 14:20:38.715343",
+                  "payMethod": "CREDIT_CARD",
+                  "instId": "instId",
+                  "instName": "instOfficialName",
+                  "enableStatus": true
+                }
+              ],
+              "payMethod": "CREDIT_CARD"
+            },
+            {
+              "payChannelOptionViews": [
+                {
+                  "enableStatus": "true",
+                  "instId": "VISA",
+                  "instName": "Visa Inc.",
+                  "payMethod": "DEBIT_CARD",
+                  "payOption": "DEBIT_CARD_VISA",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "MASTER",
+                  "instName": "MasterCard Inc.",
+                  "payMethod": "DEBIT_CARD",
+                  "payOption": "DEBIT_CARD_MASTER",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "MAESTRO",
+                  "instName": "Maestro",
+                  "payMethod": "DEBIT_CARD",
+                  "payOption": "DEBIT_CARD_MAESTRO",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                },
+                {
+                  "enableStatus": "true",
+                  "instId": "RUPAY",
+                  "instName": "RuPay",
+                  "payMethod": "DEBIT_CARD",
+                  "payOption": "DEBIT_CARD_RUPAY",
+                  "supportCountries": [
+                    "IN"
+                  ]
+                }
+              ],
+              "payMethod": "DEBIT_CARD"
+            },
+            {
+              "payChannelOptionViews": [
+                {
+                  "enableStatus": "true",
+                  "instId": "ICICI",
+                  "instName": "ICICI Bank",
+                  "payMethod": "NET_BANKING",
+                  "payOption": "NET_BANKING_ICICI"
+                }
+              ],
+              "payMethod": "NET_BANKING"
+            }
+          ],
+          "resultInfo": {
+            "resultCode": "SUCCESS",
+            "resultCodeId": "00000000",
+            "resultMsg": "success",
+            "resultStatus": "S"
+          }
+        }
+      },
+      "signature": "no_signature"
+    }
+
+  }
+}
+

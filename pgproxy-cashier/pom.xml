@@ -1,0 +1,223 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.paytm.pgplus</groupId>
+		<artifactId>pgplus-theia</artifactId>
+		<version>58.5.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pgproxy-cashier</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Cashier | PGP</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<org.springframework-version>4.2.4.RELEASE</org.springframework-version>
+		<slf4j.version>1.7.18</slf4j.version>
+		<commons-lang3.version>3.0</commons-lang3.version>
+		<jackson.version>1.9.13</jackson.version>
+		<aspectj.version>1.7.0</aspectj.version>
+		<pgplus.commonutils.version>10.0.0-SNAPSHOT</pgplus.commonutils.version>
+		<pgplus.facade.version>10.0.0-SNAPSHOT</pgplus.facade.version>
+		<pgplus.savedcardclient.version>10.0.0-SNAPSHOT</pgplus.savedcardclient.version>
+		<pgplus.promoclient.version>0.0.2-SNAPSHOT</pgplus.promoclient.version>
+		<pgplus.looperclient.version>10.0.0-SNAPSHOT</pgplus.looperclient.version>
+		<pgplus.cache.version>10.0.0-SNAPSHOT</pgplus.cache.version>
+		<pgplus.applicationcache.version>10.0.0-SNAPSHOT</pgplus.applicationcache.version>
+		<pgplus.pgproxycommon.version>10.0.0-SNAPSHOT</pgplus.pgproxycommon.version>
+		<pgplus.transactionbookkeeper.version>10.0.0-SNAPSHOT</pgplus.transactionbookkeeper.version>
+		<pgplus.checksumprocessor.version>10.0.0-SNAPSHOT</pgplus.checksumprocessor.version>
+		<junit.version>4.12</junit.version>
+		<commons-configuration.version>1.6</commons-configuration.version>
+	</properties>
+
+	<dependencies>
+
+
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+		</dependency>
+		<dependency>
+            <groupId>commons-configuration</groupId>
+            <artifactId>commons-configuration</artifactId>
+            <version>${commons-configuration.version}</version>
+        </dependency>
+
+		<!-- Spring -->
+		<!-- mandatory -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${aspectj.version}</version>
+		</dependency>
+
+		<!-- Logging dependencies -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<!-- Logging dependencies -->
+
+
+		<!-- Alipay Common -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- Alipay httpclient -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- Alipay Facade -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>facade</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- Looper client -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>looper-client</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- save card service -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>savedCardClient</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- common cache service -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>cache</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>applicationcache</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- pgproxy common module -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>pgproxy-common</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- added for transaction state logging -->
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>transaction-bookeeper</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>checksum-processor</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
+		<dependency>
+    		<groupId>org.jmockit</groupId>
+    		<artifactId>jmockit</artifactId>
+    		<version>1.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.kstyrc</groupId>
+			<artifactId>embedded-redis</artifactId>
+			<version>0.6</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.193</version>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>com.paytm.pgplus</groupId>
+            <artifactId>looper-client</artifactId>
+            <version>${project.parent.version}</version>
+            <scope>compile</scope>
+        </dependency>
+		<dependency>
+			<groupId>com.paytm.pgplus</groupId>
+			<artifactId>redis-bridge</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+    </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+                                <groupId>net.revelc.code</groupId>
+                                <artifactId>formatter-maven-plugin</artifactId>
+                        </plugin>
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+</project>

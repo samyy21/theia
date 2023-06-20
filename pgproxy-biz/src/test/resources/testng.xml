@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1">
+    <test name="Regression suite 1">
+        <classes>
+            <class name="com.paytm.pgplus.workflow.AddMoneyFlow"/>
+            <class name="com.paytm.pgplus.workflow.AutoDebitFlow"/>
+            <class name="com.paytm.pgplus.workflow.DefaultFlowUserLoggedIn"/>
+        </classes>
+    </test>
+</suite>

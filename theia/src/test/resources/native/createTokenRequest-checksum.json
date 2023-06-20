@@ -1,0 +1,26 @@
+{
+  "head": {
+    "clientId": "C11",
+    "version": "v1",
+    "requestId": "R1"
+  },
+  "body": {
+    "requestType": "R1",
+    "mid": "slSpEG68327288525417",
+    "orderId": "3921775750",
+    "custId": "1006590",
+    "txnAmount": "1057",
+    "channelId": "WEB",
+    "industryTypeId": "Retail",
+    "website": "PaytmMarketPlace",
+    "checksumHash": "wx4WYyzpU6luZ5JxcIEVkehk4LH05t0yDG0mhHyahfqpmtTdrQObVP6QSpC2TQYVQqv3fVB5JBxWJHoiLwjmQVgSBQwpoA2DXRyIzpKTXEA=",
+    "ssoToken": "563c214e-e48c-4891-be72-11da61bd06c2",
+    "deviceId": "",
+    "disabledPaymentMode": "COD,EMI",
+    "promoCampId": null,
+    "emiOptions": "BAJAJFN-DROP_ALL",
+    "address1": "%7B%22order_id%22%3A3921775750%2C%22address_type%22%3A1%2C%22firstname%22%3A%22Vivek%20Anand%22%2C%22lastname%22%3Anull%2C%22email%22%3A%22cometalk.vivek%40gmail.com%22%2C%22phone%22%3A%229582432345%22%2C%22address%22%3A%22C-7%2F%20309%20C%22%2C%22city%22%3A%22Delhi%22%2C%22pincode%22%3A%22110035%22%2C%22address2%22%3A%22Keshav%20Puram%22%2C%22state%22%3A%22Delhi%22%2C%22country%22%3A%22India%22%2C%22altphone%22%3A%227%3A309%3A110035%22%7D",
+    "pincode": 110035
+  }
+}
+

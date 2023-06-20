@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+    
+  <description>PAYTM 1.0 core library</description>
+  <display-name>PAYTM core</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>ptm</short-name>
+ <uri>PaytmCustomTags</uri>
+    <function>
+        <name>stResPath</name>
+        <function-class>
+            com.paytm.pgplus.theia.taglibs.PaytmTLD
+        </function-class>
+        <function-signature>
+            java.lang.String getStaticRandomUrlPrefix()
+        </function-signature>
+    </function>
+
+
+    <function>
+        <name>stPath</name>
+        <function-class>
+            com.paytm.pgplus.theia.taglibs.PaytmTLD
+        </function-class>
+        <function-signature>
+            java.lang.String getStaticUrlPrefix()
+        </function-signature>
+    </function>
+
+
+    <function>
+        <name>stScanPath</name>
+        <function-class>
+            com.paytm.pgplus.theia.taglibs.PaytmTLD
+        </function-class>
+        <function-signature>
+            java.lang.String getScanPayUrlPrefix()
+        </function-signature>
+    </function>
+
+  
+  </taglib>

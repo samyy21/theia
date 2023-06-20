@@ -1,0 +1,138 @@
+body, p{margin:0; padding:0; font-family: Arial, Helvetica, sans-serif}
+img{border:none;}
+a{text-decoration:none}
+select{background:#ffffff;}
+input[type="text"], input[type="password"], select{border:#cccccc solid 1px;font-size:medium; font-weight:500; font-family:Arial, Helvetica, sans-serif;width:80%; padding-top:5px; padding-bottom:5px; padding-right:5px; padding-left:5px;background-color:#ffffff;}
+/*Header*/
+.header{
+	color:#2c2c2c; border-bottom:#8e8f8f solid 1px; font-size: large; padding:10px 7px; font-weight:400
+}
+.logo{
+	background: #f0f0f0;
+	border-bottom: #bfbfbf solid 1px;
+	padding: 10px 10px 7px 10px;
+}
+
+#logo-img {
+	height : 28px;
+	margin : auto;
+	width : 70px;	
+}
+
+.back-btn {
+	padding-top : 5px;
+}
+
+/*Common*/
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+.divider{border-bottom:#666 solid 1px;}
+.dotted{border-bottom:#000 dotted 1px;}
+.right{text-align:right;}
+p a, a.tips{color: #0088cc; font:500 small Arial, Helvetica, sans-serif}
+p a:hover{color: #005580; font:500 small Arial, Helvetica, sans-serif}
+.center{text-align:center;}
+
+/*Rows*/
+.row{padding:5px 7px;color:#000; font:14px  Arial, Helvetica, sans-serif}
+.row-dot{padding:5px 7px; color:#666666; padding:10px 7px; font:500 medium Arial, Helvetica, sans-serif}
+
+/*Margin/Padding*/
+.pt20{padding-top:20px;}
+.pad{padding:15px 20px}
+.pt7{padding-top:7px;}
+.mr7{margin-right:7px;}
+.pad10{padding:10px 10px 0 20px;}
+.ml20{margin-left:20px;}
+.mb5{margin-bottom:5px;}
+.mt5{margin-top:5px;}
+
+/*Headings*/
+.heading{
+	padding: 10px 7px;
+	font:  14px  Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+	border-bottom: #ccc solid 1px;
+}
+#walletBalance{position: absolute;
+right: 6px;
+}
+/*Bottom Links*/
+.bottom-link, .bottom-link-last{display:block;font:500 small Arial, Helvetica, sans-serif; padding:10px 15px;border-bottom:#ccc solid 1px;}
+a .bottom-link,  a .bottom-link-last{color:#333333;}
+a:hover .bottom-link, a:hover .bottom-link-last{color:#005580;}
+.bottom-link-last{border-bottom:none;}
+
+/*Form elements*/
+.blue-btn{
+	background-color: #00baf2;
+	border: 0;
+	color: #fff;
+	font: 18px medium Arial,Helvetica,sans-serif;
+	padding: 8px 5px;
+	width: 97%;
+}
+.gry-btn{background-color: #B6B6B6;background-image: -moz-linear-gradient(top, #B6B6B6, #848485);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B6B6B6), to(#848485)); background-image: -webkit-linear-gradient(top, #B6B6B6, #848485); background-image: -o-linear-gradient(top, #B6B6B6, #848485);
+background-image: linear-gradient(to bottom, #B6B6B6, #848485); background-repeat: repeat-x; border-color: #848485 #848485 #A9A9A9; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#848485', endColorstr='#848485', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); color:#ffffff;font: 700 medium Arial, Helvetica, sans-serif; padding: 8px 5px;width: 80%;} 
+.cvv input[type="password"]{width:40%;}
+.expSelect{width:100%}
+.fullWalletDeduct{
+	margin: 0px 7px;
+}
+
+/*Footer*/
+.footer{border-top:#bfbfbf solid 1px; padding:7px;}
+
+/*Error /Failure*/
+.failure{background-color:#fcf8e3;border:#fbeed5 solid 1px; padding:7px; margin:10px 7px 0;color:#a6803f; font:500 medium Arial, Helvetica, sans-serif;}
+.error-txt{color:#b53b3b; font-size:12px;}
+input.error, select.error{border:1px solid #b53b3b;}
+
+/*Lock*/
+.small{font:500 small Arial, Helvetica, sans-serif; color:#9a9999; padding-left:5px; width:85%}
+.image{width:17px;}
+.deleteCard{float:right;font-size:small;margin-top:8px;color:#2cbdfc; text-decoration:underline; border:none; background-color:#fff; cursor:pointer;}
+.deleteCard:hover{color:#555;}
+.bal{margin-left:22px; font-size:small; color:#9a9999}
+
+.user-view {padding :10px;}
+
+
+#show-other-options {
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+	text-align: right;
+	padding: 10px 10px 0px 0px;
+}
+
+#partner-logos {
+	margin : auto;
+	width : 150px;
+}
+
+.hide {
+	display : none;
+}
+.alert {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.alert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+}
+
+.alert-danger {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}

@@ -1,0 +1,1467 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font:inherit;font-size:14px;color: #4a4a4a;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Fonts Start */
+
+/*Webrupee*/
+@font-face{font-family: 'WebRupee';src: url('../../../fonts/WebRupee.V2.1.eot');src: local('WebRupee'), url('../../../fonts/WebRupee.V2.1.ttf') format('truetype'),  url('../../../fonts/WebRupee.V2.1.woff') format('woff'), url('../../../fonts/WebRupee.V2.1.svg') format('svg');font-weight: normal;font-style: normal;}
+.WebRupee{font-family: 'WebRupee';}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+/* dont load open sans bold for wap */
+@media (min-width: 600px) {
+	@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+}
+
+/* Fonts End */
+/* Layout Styles End */
+/*FoodWallet UI UPGRADE*/
+.paytmcash-card .grid{padding:0; margin:0;}
+.paytmcash-card .grid{padding:0;}
+.paytmcash-card{padding:5px;}
+.fullWalletDeduct .btn-submit input.btn-normal{width: 150px;
+    padding: 0;
+    height: 38px;}
+.fullWalletDeduct .cancel{margin-left: 10px !important; margin-top: 16px !important;}
+
+
+.foodWalletBorder{   position: absolute;
+	width: 100%;
+	border-top: 1px solid #ccc;
+	top: -15px;
+	margin-left: -21px;
+	padding-left: 42px;}
+.wallet-icn{    margin-right: 7px;
+
+	display: inline-block;
+	position: relative;    width: 20px;}
+.wallet-icn img{
+	margin-top: -13px;
+	position: absolute;
+	top: 0;
+}
+
+
+/*Payment Cards*/
+.paymentCards{clear:both; width:100%; color:#ccc; padding-bottom: 5px;}
+.paymentCradsList{width: 100%;font-size: 10px;margin-top: 11px; padding:0;}
+.topBorder{ border-top: #ccc solid 1px; width:100%; height:10px;}
+.paymentCradsList li{font-size: 14px;
+	color: #7B7B7B;
+	margin: 0;
+	vertical-align: middle;
+	padding: 6px 0px; clear:both;}
+.paymentCradsList li strong {
+	font-weight: 400;
+	font-size: 14px;
+	float:right;
+	color: #7B7B7B;
+
+}
+.paymentCradsList li strong .WebRupee{color: #7B7B7B;  }
+.arrow-down {
+	background: url("../../../images/arrowDown.png") no-repeat;  width:19px;
+	height: 19px;
+	position: absolute;
+	right: -30px;
+	bottom: 0;
+	cursor: pointer;
+
+}
+.paymentCards li{    border-bottom: 1px solid #ccc;
+	padding: 16px 2px 5px 2px;
+	width: 100%; box-sizing: border-box;}
+.paymentCards li:last-child{border:none;}
+.arrow-up {
+	background: url("../../../images/arrowUp.png") no-repeat;  width:19px;
+	height: 19px;
+	position: absolute;
+	right: -30px;
+	bottom: 0;
+	cursor: pointer;
+}
+
+
+/* Layout Styles Start */
+.rightAmt{float: right;
+    text-align: right;}
+.widthBox{width:290px;}
+.noBorder{border:none !important;}
+ #WalletsWAPView{display:none;}
+    #WalletsWEBView{display:block;}
+.storeCardWrapper{clear:both;}
+
+body{
+	background-color:#fff;
+	font-family:'Open Sans', Arial, sans-serif; 
+}
+
+/* Layout Styles Start */
+#login-stitch{
+margin-top:10px;	
+}
+
+a {
+	text-decoration : none;
+}
+
+a:hover, a.active {
+	color : #00d7ff;
+}
+
+p {
+	margin-bottom : 10px;
+}
+
+select {
+	background-color: #F5F5F5;
+	line-height: 28px;
+	padding: 15px 5px;
+	background: #fff;
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	height: 50px;
+	font-size: 14px;
+}
+
+/* .WebRupee {
+	margin-right: -3px;
+} */
+
+/* prevent safari */
+input[type=button], input[type=submit], input[type=text] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.fl {
+	float : left !important;
+}
+
+.fr {
+	float : right !important;
+}
+
+.hr {
+	border-top: 1px #d1d1d1 solid;
+}
+
+.clear {
+	clear : both;
+}
+
+.mt6 {
+	margin-top : 6px;
+}
+
+.mt8 {
+	margin-top : 8px;
+}
+
+.mt10 {
+	margin-top : 10px;
+}
+
+.mt20 {
+	margin-top : 20px;
+}
+
+.mt50 {
+	margin-top : 50px;
+}
+
+.mb10 {
+	margin-bottom : 10px;
+}
+
+.mb20 {
+	margin-bottom : 20px;
+}
+
+.mb7 {
+	margin-bottom: 7px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.ml5 {
+	margin-left : 5px;
+}
+
+.ml10 {
+	margin-left : 10px;
+}
+
+.ml20 {
+	margin-left : 20px;
+}
+
+.ml50 {
+	margin-left : 50px;
+}
+
+.mr10 {
+	margin-right : 10px;
+}
+
+.mr20 {
+	margin-right : 20px;
+}
+
+.pt20 {
+	padding-top : 20px;
+}
+
+.lh14 {
+	line-height: 14px;
+}
+
+.grid {
+	overflow : hidden;
+}
+.grid li {
+	float : left;
+}
+
+.xsmall, .xsmall * {
+	font-size : 10px;
+	line-height : 12px;
+}
+
+.small, .small * {
+	font-size : 12px;
+}
+
+.default {
+	font-size : 14px;
+}
+
+.medium, .medium * {
+	font-size : 16px;
+}
+
+.large, .large * {
+	font-size : 20px;
+}
+
+.blue-text, .blue-text * {
+	color : #00d7ff;
+}
+
+.lt-grey-text, .lt-grey-text * {
+	color : #999 !important;
+}
+
+.grey-text, .grey-text * {
+	color : #333;
+}
+
+.blue-text-2, .blue-text-2 * {
+	color : #082a71;
+}
+
+.red-text {
+	color : red;
+}
+
+.text, .text * {
+	color : #4a4a4a;
+}
+
+.right-text {
+	text-align : right;
+}
+
+.b {
+	font-weight : 600;
+}
+
+.underline {
+	text-decoration : underline;
+}
+
+label {
+	color : #333;
+}
+
+*:focus{outline:none !important}
+
+
+.blured {
+	opacity : 0.4;
+	filter:alpha(opacity=40);
+	zoom :1;
+}
+
+.text-input {
+	padding: 14px 20px;
+	border-radius: 3px;
+	border: 1px solid #d4d4d4;
+	height: 20px;
+	font-size : 20px;
+	font-family: "Open Sans";
+}
+
+.text-input:focus {
+	border-color: #00d7ff;
+	box-shadow: 0px 0px 2px #00d7ff;
+}
+
+/*.text-input:disabled{
+	background: white;
+	border: 1px solid white;
+	font-size : 20px;
+	padding: 3px 3px 3px 15px;
+}*/
+
+.text-input.disabled  {
+	background: white;
+	border: 1px solid white;
+	font-size : 20px;
+	padding: 3px 0px;
+}
+
+.small-input {
+	width : 50px;
+}
+
+.medium-input {
+	width : 90px;
+}
+
+.large-input {
+	width : 416px !important;
+}
+
+div.error, span.error {
+
+	color: #b94a48;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.inlineEle {
+	display:inline-block;
+}
+
+input.error1, select.error1 {
+	border-color : #b94a48;
+}
+
+input:disabled, input.disabled {
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	cursor : default;
+	background-position: 0px -161px !important;
+}
+
+.disabled {
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+.relative {
+	position : relative;
+}
+
+
+
+
+
+.main-container {
+	overflow : hidden;
+}
+
+.img {
+	background: url("../../../images/web/merchant/sprite_compressed.png") no-repeat;
+}
+ .img-walletlogo{
+ /*background-position: -125px -75px; */
+ background: url("../../../images/web/merchant/wallet.png") no-repeat;
+ margin-top: -6px;
+ width:42px;
+ height:36px;
+ float:left;
+ margin-right:5px;
+ }
+ 
+.img-logo {
+	background-position: -77px -43px;
+	width: 90px;
+	height: 30px;
+	margin: 16px 0px;
+}
+
+.img-partner-logo {
+	/* background-position: 0px 7px; */
+	background: url("../../../images/web/footer_logos.png") no-repeat;
+	width: 320px;
+	height: 47px;
+	margin : auto;
+}
+
+.img-cvv {
+	background-position: 0px -40px;
+	width: 75px;
+	height: 40px;
+	margin-left: -37px;
+	margin-top: -3px;
+}
+
+.img-lock {
+	background-position: 3px -78px;
+	width: 20px;
+	height: 20px;
+}
+
+.img-arw-dwn {
+	background-position: -26px -81px;
+	width: 20px;
+	height: 20px;
+}
+
+.img-arw-rt {
+	background-position: -42px -77px;
+	width: 16px;
+	height: 20px;
+}
+
+.merchant-logo {
+	margin: 11px 0px;
+}
+
+#merchant-logo {
+  height: 48px;
+  max-width: 200px;
+}
+
+#merchant-logo img {
+  max-height: 48px;
+  max-width: 200px;
+}
+
+.cards-control .img-arw-rt {
+	margin-top : 12px;
+	display : none;
+}
+
+.active .img-arw-rt {
+	display : block;
+}
+
+
+
+#header {
+	border-bottom: 2px #00d7ff solid;
+	background-color : #fff;
+}
+
+#footer {
+	padding: 10px;
+	border-top: 1px #d1d1d1 solid;	
+	background : white;
+}
+
+.container {
+	width : 820px;
+	margin : auto;
+}
+
+.card {
+	border: 1px #d1d1d1 solid;
+	border-radius: 3px;
+	padding: 10px 20px;
+	margin: 20px 0px;
+	position: relative;
+}
+
+
+.card.active {
+	border-color : #00d7ff;
+}
+
+.card label {
+	display : block;
+}
+
+.blur-overlay {
+	display : none;
+	position : absolute;
+	top: 0px;
+	left: 0px;
+	width : 100%;
+	height: 100%;
+	z-index: 10;
+	background : #f5f5f5;
+	opacity : 0.4;
+	filter:alpha(opacity=40);
+}
+
+.cards-control {
+	width : 220px;
+	/* margin-right : 20px; */
+	float : left;	
+}
+
+.cards-content {
+	width : 560px;
+	float : right;		
+}
+
+
+.cards-control .grid{
+	margin-left : -10px;
+}
+
+.cards-control .card {
+	margin: 0px 0px 7px 10px;
+	text-align: left;
+	padding: 0px 10px;
+	float: none;
+	font-weight: bold;
+}
+
+.cards-control .card a{
+	padding: 16px 8px;
+	display : block;
+} 
+
+.cards-control .card.active {
+	border-color: #00d7ff;
+	background: #00d7ff;
+}
+
+.cards-control .card.active a{
+	color : #fff;
+}
+
+.cards-content > .card {
+	padding: 40px;
+	margin : 0px;
+}
+
+.cards-content .card {
+	background-color : #fff;
+}
+
+.cards-content > .content {
+	display : none;
+}
+
+.cards-content .content.active {
+	display : block;
+}
+
+#sc-card .card {
+	margin : 0px;
+	margin-bottom : 20px;
+}
+
+.summary-card {
+	background : #f3f3f3;
+}
+
+.gry-btn {
+	
+}
+
+.blue-btn {
+
+}
+
+.btn-submit {
+	position : relative;
+}
+
+.btn-submit.active {
+	display : block;
+}
+
+.btn-submit input{
+	height: 49px;
+	width: 235px;
+	background: url("../../../images/web/merchant/sprite_compressed.png") no-repeat;
+	background-position: 0px -111px;
+	background-color : white;
+	border: none;
+	color : transparent;
+	cursor : pointer;
+	opacity: 1 !important;
+}
+
+.btn-submit input.btn-normal,.btn-submit button.btn-normal,.buttonCls input.btn-normal{
+	height: 49px;
+	width: 235px;
+	background: #00d7ff !Important;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-size: 17px;
+	border-radius: 4px;
+}
+
+.bootstrap-checkbox button{
+	background: transparent;
+	border: none;
+	padding: 0px;
+}
+
+.tick {
+	display : block;
+	width: 26px;
+	height: 26px;
+	background: url("../../../images/web/merchant/sprite_compressed.png") no-repeat -209px -67px;
+	cursor : pointer;
+}
+
+.disabled .tick {
+	cursor : default;
+}
+
+.cb-icon-check {
+	background-position: -209px -40px;
+}
+
+.green-tick .cb-icon-check {
+	background-position: -177px -43px;
+} 
+
+.bank-logo {
+	display: block;
+	width: 113px;
+	height: 27px;
+	margin-top: 2px;
+}
+
+.alert {
+	padding: 15px;
+	border: 1px solid #faebcc;
+	border-radius: 4px;
+	background-color: #fcf8e3;
+	color: #CD913F;
+	font-size : 16px;
+	font-weight : bold;
+}
+
+.alert-info {
+	border-color: #bce8f1;
+	background-color: #d7f3fd;
+	color: #00bef2;
+}
+
+.alert-danger {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+
+.alert-success {
+	border-color: #d6e9c6;
+	background-color: #dff0d8;
+	color: #3c763d;
+}
+
+.notification {
+	padding: 20px;
+	line-height : 20px;
+}
+
+.md-modal{position:fixed;top:50%;left:50%;height:auto;z-index:99999;visibility:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;}
+.md-content{position:relative}
+.md-show{visibility:visible;}
+.md-overlay{visibility:hidden;position:fixed;width:100%;height:100%;top:0;left:0;z-index:9999;opacity:0;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s}
+.md-show~.md-overlay{opacity:0.4;filter:alpha(opacity=40);background:#000;visibility:visible}
+.md-effect-10.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px;perspective:1300px}
+.md-effect-10 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:rotateX(-60deg);-moz-transform:rotateX(-60deg);-ms-transform:rotateX(-60deg);transform:rotateX(-60deg);-webkit-transform-origin:50% 0;-moz-transform-origin:50% 0;transform-origin:50% 0;opacity:0;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s}
+.md-show.md-effect-10 .md-content{-webkit-transform:rotateX(0deg);-moz-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}
+.md-modal .md-content{
+	width:440px;height:460px;border-radius:5px;background:white;
+	border: 1px solid #00d7ff;
+	z-index: 99999;
+}
+
+.md-modal .closePop {
+    background: url("../../../images/web/merchant/sprite_compressed.png") no-repeat;
+	background-position: -168px -69px;
+    height: 41px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 41px;
+    z-index: 10;
+}
+
+#login-modal #login-iframe {
+	border: 0 none;
+    border-radius: 5px;
+    height: 560px;
+    width: 440px;
+    position : absolute;
+    top : 0px;
+    left: 0px;
+}
+
+#login-modal .md-content {
+	height : 560px;
+}
+
+#login-spinner {
+	position : absolute;
+	top : 180px;
+	width : 100%;
+	text-align : center;
+}
+
+#delete-confirm-modal {
+	margin-top: -143px;
+	margin-left: -275px
+}
+
+#delete-confirm-modal .md-content{
+	width: 450px;
+	height: 186px;
+	padding: 50px;
+}
+
+#delete-confirm-modal .text {
+	text-align: center;
+	padding: 35px;
+}
+
+#delete-confirm-modal .btn-normal {
+	width : 200px;
+}
+
+.banks-panel {
+	margin-left : -7px;
+}
+
+.banks-panel li{
+	border: 1px #d1d1d1 solid;
+	border-radius: 5px;
+	padding: 5px 2px;
+	margin: 5px 0px 5px 6px;
+}
+
+.banks-panel li label {
+	cursor: pointer;
+}
+
+/*Tooltop*/
+div.ui-cluetip {
+	height : 32px;
+	font-size:10px;color:999; background:url(../../../images/web/paytm/cvv.png) no-repeat left; padding-left:70px
+}
+div.amex-clue {
+	background-image:url(../../../images/web/paytm/scode.png)
+}
+
+.sc-icon {
+	width : 34px;
+	height : 28px;
+	background-position : center;
+}
+
+.sc-number {
+	width : 80%;
+}
+/*Card brands*/	
+/* .c{ background-image:url(../../../images/web/merchant/cc-paytm.png);	background-repeat: no-repeat;background-position:232px;} */
+
+/*.d{ background-image:url(../../../images/web/merchant/dc.png);	background-repeat: no-repeat;background-position:252px;}*/
+.visa{ background-image:url(../../../images/web/merchant/visa.png); background-repeat: no-repeat;background-position:405px;}
+.master{ background-image:url(../../../images/web/merchant/master.png);	background-repeat: no-repeat;background-position:405px;}
+#warningDiv{
+	background: #fdfbd3;
+    padding: 7px 20px 14px 20px;
+    font-weight: 500;
+    font-size: small;
+}
+.UPI-sc{ background-image:url(../../../images/web/merchant/upi.png); background-repeat: no-repeat; background-size: 102%;}
+.VISA-sc{ background-image:url(../../../images/web/merchant/visa.png); background-repeat: no-repeat;}
+.MASTER-sc{ background-image:url(../../../images/web/merchant/master.png);	background-repeat: no-repeat;}
+.DINERS-sc{ background-image:url(../../../images/web/merchant/diners.png);	background-repeat: no-repeat;}
+.SBIME-sc{ background-image:url(../../../images/web/merchant/maestro.png); background-repeat: no-repeat;}
+.MAESTRO-sc{ background-image:url(../../../images/web/merchant/maestro.png); background-repeat: no-repeat;}
+.AMEX-sc{ background-image:url(../../../images/web/merchant/amex.jpg); background-repeat: no-repeat;}
+.RUPAY-sc{ background-image:url(../../../images/web/merchant/rupay.png); background-repeat: no-repeat;width:55px;}
+.DISCOVER-sc{ background-image:url(../../../images/web/merchant/discover.png);	background-repeat: no-repeat;    background-size: 110%;}
+
+.rupay{ background-image:url(../../../images/web/merchant/rupay.png);	background-repeat: no-repeat;background-position:378px;}
+.discover{ background-image:url(../../../images/web/merchant/discover.png);	background-repeat: no-repeat;background-position:99%;}
+.visa-sc{ background-image:url(../../../images/web/merchant/visa.png); background-repeat: no-repeat;background-position:220px;}
+.master-sc{ background-image:url(../../../images/web/merchant/master.png);	background-repeat: no-repeat;background-position:220px;}
+
+.amex{ background-image:url(../../../images/web/merchant/amex.jpg); background-repeat: no-repeat;background-position:405px;}
+.maestro{ background-image:url(../../../images/web/merchant/maestro.png); background-repeat: no-repeat;background-position:405px;}
+.diners{ background-image:url(../../../images/web/merchant/diners.png); background-repeat: no-repeat;background-position:405px;}
+.bajajfn{ background-image:url(../../../images/web/merchant/bajajfn.png); background-repeat: no-repeat;background-position:99%;}
+.sc-cards .card {
+	padding : 15px;
+}
+
+.sc-cards .cvv-clue {
+	margin-left : 37px;
+}
+
+.paytmcash-card.active {
+	border-color : #5cb85c;
+}
+
+.cancel {
+	color: #00b9f5;
+	text-decoration: underline;
+	margin: 25px 0px 0px 10px;
+	display: inline-block;
+}
+
+.cancel.no-formatting {
+	margin : 0px;
+}
+
+input.cancel {
+	background-color: transparent;
+	padding-top: 20px;
+}
+
+.hide {
+	display : none;
+}
+
+.f-hide {
+	display : none !important;
+}
+
+.show {
+	display : block;
+}
+
+.myaccount {
+	padding : 15px;
+}
+
+.payment-details {
+	line-height : 18px;	
+}
+
+#ccCvvWrapper, #dcCvvWrapper {
+	width: 204px;
+}
+
+.secure {
+	position: absolute;
+	top: -15px;
+	right: -8px;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  /* max-width: 276px; */
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #FBEED5;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  top: 22px;
+  left: -325px; 
+  width : 410px;
+  display: block; background-color: #FCF8E3;color: #CD913F;padding: 5px 15px;
+}
+
+.popover.bottom {
+  margin-top: 10px;
+}
+
+
+.popover-content {
+  padding: 9px 10px;
+  color : #CD913F;
+  display : inline-block;
+}
+
+.popover-close {
+	display : inline-block;	
+}
+
+.popover-close a {
+	color : #CD913F;
+}
+
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 11px;
+}
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+
+
+.popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #FCF8E3;
+  border-bottom-color: #FBEED5;
+  left: 340px;
+}
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #FCF8E3;
+}
+
+.imps-grid #mobileNo {
+	width: 210px;
+}
+
+.fixed-bottom {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+}
+
+#footer-placeholder {
+	height: 90px;
+}
+
+.cvv-block input {
+	display : block;
+}
+
+.emi-plans li {
+	border: 1px solid #ccc;
+	width: 147px;
+	text-align: right;
+	margin: 0px 5px 5px 0px;
+}
+
+.emi-plans li div {
+	padding : 5px 10px;
+}
+
+.emi-month {
+	line-height : 28px;
+}
+
+.emi-amt {
+	line-height: 20px;
+	color: #000;
+}
+
+.emi-back {
+	background: #e1e1e1;
+}
+
+.emiBankSelect {
+	width : 147px;
+}
+
+.sc-number input {
+	width : 210px;
+}
+
+.spinner-blue {
+	background: url("../../../images/spinner-blue.gif") no-repeat 0px 0px;
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: 12px;
+	right: 12px;
+	background-size: 26px 26px;
+}
+
+
+@media (max-width: 819px) {
+	.container {
+		width : 580px;
+	}
+	
+	
+	.cards-control {
+		width: 100%;
+		margin-bottom : 10px;
+	}
+	
+	.cards-content{float : left;}
+	
+	.cards-control .card {
+		
+		float : left;
+	}
+	
+	.cards-control .img-arw-rt {
+		display : none;
+	}
+}	
+
+
+@media (max-width: 599px) {
+	
+	.widthBox{width:auto;}
+	
+	.mb10 {
+		margin-bottom : 7px;
+	}
+	
+	.mt20  {
+		margin-top : 10px;
+	}
+	
+	.mb20  {
+		margin-bottom : 10px;
+	}
+	
+	.medium, .medium * {
+		font-size : 14px;
+	}
+	
+	.large, .large * {
+		font-size : 18px;
+	}
+	
+	.container {
+		width : 100%;
+	}
+	
+	.card {
+		margin: 15px 0px;
+	}
+	
+	.cards-control, .cards-content {
+		width : 100%;
+	}
+	
+	.cards-control {
+		margin-right : 0px;
+		margin-bottom : 20px;
+	}
+	
+	.cards-control .grid {
+		margin-left : 0px;
+		margin-top : 0px;
+	}
+	.sc-cards .cancel {
+		float: right;
+		clear: both;
+		margin-right: 20px;
+	}
+
+	
+	.cards-control .card {
+		width: 99%;
+		margin: 0px;
+		margin-bottom: 1px;
+		padding : 0px;
+	}
+	
+	.cards-control .selection {
+		display : block;
+		border: 1px #d1d1d1 solid;
+		border-radius: 5px;
+		padding: 10px 20px;
+	}
+	
+	.cards-control .selection.active {
+		border-color: #00d7ff;
+		background : #00d7ff;
+	}
+	
+	.cards-control .selection.active .tab-name{
+		color: #fff;
+		display : block;
+	}
+	
+	.cards-control .selection.active .default-name {
+		display : none;
+	}
+			
+	/* .cards-control .grid {
+		display : none;
+	} */
+	
+	.cards-control .card a {
+		padding: 12px 8px;
+		text-align: left;
+		padding-left: 20px;
+	}
+	
+	.sc-number {
+		width : 78%;
+	}
+
+	.text-input.disabled {
+		font-size: 18px;
+	}
+	
+	.saveCardCvvDiv {
+		margin: 10px 0px 0px 10px;
+	}
+	
+	.cards-content .card {
+		padding: 20px;
+	}
+	
+	.card-header {
+		margin-bottom: 20px;
+	}
+	
+	.cards-content .large-input {
+		width: 80% !important;
+		background-position: center right;
+		/* box-sizing: border-box;
+		padding: 24px 15px; */
+	}
+
+	
+	#ccCvvWrapper, #dcCvvWrapper {
+		float: left !important;
+		width: 100%;
+		margin-left: 0px;
+	}
+	
+	#ccCvvWrapper div, #dcCvvWrapper div {
+		float : left;
+	}
+	
+	div.ui-cluetip {
+		width: 24%;
+		margin-top: 22px;
+	}
+	
+	.card-wrapper {
+		width : 100%;
+	}
+	
+	.expiry-wrapper {
+		margin-bottom : 7px;
+	}
+	
+	.merchant-name {
+		width : 75%;
+		margin-bottom : 5px;
+	}
+	
+	.login-popover .arrow {
+		left: 165px !important;
+	}
+	
+	.login-popover {
+		width: 227px;
+		left: -150px;
+	}
+	
+	.popover-content {
+		float: left;
+		width: 188px;
+	}
+	
+	.popover-close {
+		padding: 13px 6px;
+	}
+	
+	.fullWalletDeduct {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	.cards-control .img-arw-rt {
+		display : none !important;
+	}
+	
+	.emi-plans li {
+		width: 134px;
+	}
+	
+	#delete-confirm-modal {
+		margin-top: -130px;
+		margin-left: -150px
+	}
+	
+	#delete-confirm-modal .md-content{
+		width: 240px;
+		height: 200px;
+		padding: 30px;
+	}
+	
+	#delete-confirm-modal .text {
+		padding: 15px;
+	}
+	
+	.md-modal {
+		display : none;
+	}
+	
+	.md-show {
+		display : block;
+	}
+	
+	.c, .d {
+		background: none;
+	}
+	
+	.text-input {
+		font-size : 16px;
+	}
+	
+	#logout-btn-container {
+		display : none;
+	}
+
+	.banks-panel li{
+		width:45%;
+		position:relative;
+		margin:5px 0px 5px 4px;
+	}
+	
+	.bank-logo{
+		width:90px;
+		background-size:100% !important;
+	}
+	
+	#sc-card .action-btns {
+		width : 65%;
+	}
+	#sc-card .btn-submit {
+		width : 100%;
+		margin-top: 10px;
+	}
+	#sc-card #scSubmit {
+		width : inherit;
+	}
+	
+	#sc-card .scCvvInput {
+		padding: 14px 10px;
+	}
+	
+	.paymentCards{width:91% !important;}
+	.paytmcash-card .grid li{ float: none !important; text-align: center;}
+	.paytmcash-card .grid #leftTxt .text-box{ float: none !important; text-align: center;}
+	.paytmcash-card .cancel{margin-left:0 !important;}
+	.balance-used-box{text-align: center;
+    float: none !important;
+    width: 100%;
+    clear: both;
+    padding-top: 8px;}
+    
+ #WalletsWAPView{display:block;}
+    #WalletsWEBView{display:none;}
+    #WalletsWAPView .paymentCradsList li{text-align:left; font-size: 13px;}
+    .arrow-down, .arrow-up{right:0 !important;}
+    
+    .paymentCradsList li strong{font-size: 13px;}
+	
+
+}
+
+@media (max-width: 500px){
+	.paymentCards{width:91% !important;}
+}
+@media (max-width: 320px){
+	.paymentCards{width:90% !important;}
+
+	}
+
+@media (max-width: 300px){
+	.banks-panel li{width:auto; position:relative; margin:5px 0px 5px 4px;}
+.bank-logo{width:113px; background-size:none !important; }
+}
+
+.shake {
+    animation: myfirst linear 0.6s ;
+    -webkit-animation: myfirst linear 0.6s ;
+}
+
+@-webkit-keyframes myfirst {
+	0% { -webkit-transform: translate(-10px, 0px); }
+	16% { -webkit-transform: translate(9px, 0px); }
+    33% { -webkit-transform: translate(-6px, 0px); }
+    50% { -webkit-transform: translate(5px, 0px); }
+	66% { -webkit-transform: translate(-2px, 0px); }
+    83% { -webkit-transform: translate(1px, 0px); }
+    100% { -webkit-transform: translate(0px, 0px); }
+}
+
+@keyframes myfirst {
+    0% { transform: translate(-10px, 0px); }
+	16% { transform: translate(9px, 0px); }
+    33% { transform: translate(-6px, 0px); }
+    50% { transform: translate(5px, 0px); }
+	66% { transform: translate(-2px, 0px); }
+    83% { transform: translate(1px, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slider.closed {
+	max-height: 0;
+}
+.deleteCard{display:none;}
+.disable_overlay{width: 100%;
+height: 49px; top: 0;
+right: 0;position: absolute}
+.usd{font-size: 20px; text-indent:-999em; background: url("../../../images/web/merchant/dollar.png") no-repeat; width:10px; display:inline-block; height:18px;}
+.aed{font-size: 20px;}
+.innerTabs{display:block; clear:both; overflow:hidden;}
+.innerTabs li{display:inline-block; float:left; padding:0; margin:5px 10px;}
+.innerTabs li.active a{border-bottom:1px solid #000; color:#000;}
+.innerTabs a{color:#666; padding:8px 0; display:inline-block; border-bottom:1px solid #fff;}
+.infoBox{
+	background: url("../../../images/web/info_icn.png") no-repeat;  width:16px;
+	height: 16px;
+}
+
+.payInfo p{font-size:11px;}
+.payInfo{display:inline-block;
+float: right;
+  margin-right: 1px;
+}
+.info_checkDDNeft{
+		padding:5px;
+	  width: 280px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  position: absolute;
+	  margin-right: -121px;
+	  z-index: 9;
+	  margin-top: 16px;
+	  right:0;
+	  background-color:#fff;
+	  box-shadow: 0 1px 4px #aaa;
+	}
+.faqs{  
+ color: #00d7ff;
+  position: absolute;
+  right: 14px;
+  top: 16px;
+  }
+  
+
+@media (max-width: 767px) {
+	.paymentCradsList {
+		width: 100%;
+		font-size: 10px;
+		margin-left: 0;
+		margin-top: 16px;
+		padding: 0;
+	}
+
+	.paytmcash-card {
+		padding: 10px;
+	}
+
+	#yourBal, #remBal {
+		margin-top: 10px;
+		text-align: left;
+	}
+
+	.arrow-down, .arrow-up {
+		top: none;
+		bottom: 0;
+	}
+
+	.paytmcash-card .text-box.ml20 {
+		margin-left: 6px;
+	}
+
+	.rightAmt {
+		float: right;
+		margin-right: 28px;
+	}
+	.paymentCards li:last-child{border-bottom: 1px solid #ccc;}
+	.fullWalletDeduct{text-align: center;}
+	.fullWalletDeduct .btn-submit{width:100%;}
+	.fullWalletDeduct .btn-submit input{width:100% !important;}
+	.cancel {
+		text-decoration: none;
+	}
+}
+
+.loading {
+	color: black;
+	background-color: #ebfbff;
+}
+
+.md-modal .md-content{
+	width: 801px;
+}
+#login-modal .md-content {
+	height: 430px;
+}
+#login-modal #login-iframe{
+	height: 430px;
+	width: 801px;
+
+}
+
+.card-bin-disable {
+	background:#fdfbd3;
+	padding: 7px 20px 14px 20px;
+	font-weight: 500;
+	font-size: small;
+	border-radius: 4px;
+	border: 1px solid #fdfbd3;
+}
+
+.card-bin-disable-error-msg {
+	color: black;
+}
+
+body div.btn-submit .bg-gray {
+	background-color: gray !important;
+}

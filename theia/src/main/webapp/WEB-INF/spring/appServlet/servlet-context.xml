@@ -1,0 +1,202 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd ">
+
+	<import resource="classpath:Client-Context.xml"/>
+    <context:property-placeholder location="file:///etc/appconf/project/looperclient.properties" ignore-unresolvable="true"/>
+    <context:component-scan base-package="com.paytm.pgplus"/>
+
+    <aop:aspectj-autoproxy/>
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="200"/>
+
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- Configuring interceptors based on URI -->
+    <mvc:interceptors>
+
+        <!--to intercept mock traffic at the starting of any transaction-->
+        <mvc:interceptor>
+            <mvc:mapping path="/processTransaction"/>
+            <mvc:mapping path="/HANDLER_IVR/CLW_APP_PAY/APP"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.shadowtraffic.ShadowTrafficPhaseOneInterceptor"/>
+        </mvc:interceptor>
+
+        <!--to just fetch a mock parameter if present from the global session-->
+        <mvc:interceptor>
+            <mvc:mapping path="/payment/request/submit"/>
+            <mvc:mapping path="/transactionStatus"/>
+            <mvc:mapping path="/v1/transactionStatus"/>
+            <mvc:mapping path="/upi/transactionStatus"/>
+            <mvc:mapping path="/processRetry"/>
+            <mvc:mapping path="/abandonTransaction"/>
+            <mvc:mapping path="/session-timeout"/>
+            <mvc:mapping path="/transactionStatusAsync"/>
+            <mvc:mapping path="/v1/transactionStatusAsync"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.shadowtraffic.ShadowTrafficPhaseTwoInterceptor"/>
+        </mvc:interceptor>
+
+        <!--nativ interceptor for shadow requests-->
+        <mvc:interceptor>
+            <mvc:mapping path="/api/v1/initiateTransaction"/>
+            <mvc:mapping path="/api/v1/subscription/create"/>
+            <mvc:mapping path="/api/v1/subscription/renew"/>
+            <mvc:mapping path="/api/v1/token/create"/>
+            <mvc:mapping path="/postTransactionSplit"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.shadowtraffic.NativeShadowTrafficPhaseOneInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/api/v1/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v1/processTransaction"/>
+            <mvc:mapping path="/api/v1/showPaymentPage"/>
+            <mvc:mapping path="/api/v2/showPaymentPage"/>
+            <mvc:mapping path="/api/v1/showLinkPaymentPage"/>
+            <mvc:mapping path="/api/v1/guest/fetchPaymentOptions" />
+            <mvc:mapping path="/api/v2/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v5/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v2/applyPromo"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.shadowtraffic.NativeShadowTrafficPhaseTwoInterceptor"/>
+        </mvc:interceptor>
+
+        <!-- singnature validation interceptor -->
+        <mvc:interceptor>
+	        <mvc:mapping path="/v1/transactionStatus"/>
+            <mvc:mapping path="/v1/transactionStatusAsync"/>
+	        <mvc:mapping path="/v1/directBankCardPayment"/>
+	        <bean class="com.paytm.pgplus.theia.interceptors.SignatureInterceptor" />
+	    </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/resources/**"/>
+            <mvc:exclude-mapping path="/healthcheck"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.TheiaInterceptor"/>
+        </mvc:interceptor>
+
+        <!-- super gateway interceptor -->
+        <mvc:interceptor>
+            <mvc:mapping path="/api/v4/login/sendOtp"/>
+            <mvc:mapping path="/api/v4/login/validateOtp"/>
+            <mvc:mapping path="/api/v4/vpa/validate"/>
+            <mvc:mapping path="/api/v4/fetchBinDetail"/>
+            <mvc:mapping path="/api/v4/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v4/fetchNBPaymentChannels"/>
+            <mvc:exclude-mapping path="/resources/**"/>
+            <mvc:exclude-mapping path="/healthcheck"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.SuperGwInterceptor"/>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/processTransaction/**"/>
+            <mvc:mapping path="/customProcessTransaction/**"/>
+            <mvc:mapping path="/processRetry/**"/>
+            <bean class="com.paytm.pgplus.theia.csrf.interceptor.CSRFGeneratorInterceptor">
+            </bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+                        <mvc:mapping path="/processTransaction/**"/>
+                        <bean class="com.paytm.pgplus.theia.interceptors.DisablePaymentModeForAddCardFlowInterceptor"></bean>
+                  </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/DeleteCardDetails/**"/>
+            <mvc:mapping path="/payment/request/submit/**"/>
+            <bean class="com.paytm.pgplus.theia.csrf.interceptor.CSRFValidatorInterceptor"/>
+        </mvc:interceptor>
+        <!-- json checksum/signature validation  -->
+         <mvc:interceptor>
+             <mvc:mapping path="/api/v1/initiateTransaction"/>
+             <mvc:mapping path="/api/v1/closeOrder"/>
+             <mvc:mapping path="/api/v1/subscription/create"/>
+             <mvc:mapping path="/vpa/validate"/>
+             <mvc:mapping path="/api/v1/subscription/renew"/>
+             <mvc:mapping path="/api/v1/imei"/>
+             <mvc:mapping path="/postTransactionSplit"/>
+             <bean class="com.paytm.pgplus.theia.interceptors.SignatureValidationInterceptor" />
+	    </mvc:interceptor>
+	   <mvc:interceptor>
+			<mvc:mapping path="/api/v1/initiateTransaction" />
+            <mvc:mapping path="/api/v1/subscription/create"/>
+			<mvc:mapping path="/api/v1/fetchNBPaymentChannels" />
+			<mvc:mapping path="/api/v1/fetchPaymentOptions" />
+			<mvc:mapping path="/api/v1/fetchBinDetail" />
+			<mvc:mapping path="/api/v1/sendOtp" />
+			<mvc:mapping path="/api/v1/validateOtp" />
+			<mvc:mapping path="/api/v1/processTransaction" />
+			<mvc:mapping path="/api/v1/fetchBalanceInfo" />
+			<mvc:mapping path="/api/v1/fetchEmiPaymentChannels" />
+			<mvc:mapping path="/api/v1/fetchEmiDetail" />
+            <mvc:mapping path="/api/v1/showPaymentPage" />
+            <mvc:mapping path="/api/v2/showPaymentPage" />
+            <mvc:mapping path="/api/v1/showLinkPaymentPage" />
+            <mvc:mapping path="/api/v1/enhanced/logout/user" />
+            <mvc:mapping path="/api/v1/logout/user" />
+            <mvc:mapping path="/api/v1/guest/fetchPaymentOptions" />
+            <mvc:mapping path="/api/v1/guest/fetchBinDetail" />
+            <mvc:mapping path="/api/v2/logout/user" />
+            <mvc:mapping path="/postTransactionSplit"/>
+
+           <bean class="com.paytm.pgplus.theia.interceptors.EnhancedCashierFlowInterceptor" />
+	    </mvc:interceptor>
+	    <mvc:interceptor>
+	        <mvc:mapping path="/api/v1/order/pay/**"/>
+	        <bean class="com.paytm.pgplus.theia.s2s.interceptor.ChecksumValidationInterceptor" />
+	    </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/v1/updateTransactionDetail"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.SignatureValidationInterceptor" />
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/v1/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v2/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v5/fetchPaymentOptions"/>
+            <mvc:mapping path="/api/v1/cardNumberValidation"/>
+            <mvc:mapping path="/api/v1/fetchUserPaymentModeStatus"/>
+            <bean class="com.paytm.pgplus.theia.interceptors.TokenTypeChecksumValidationInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!-- Configure Properties File -->
+   <!-- <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="project-properties">
+        <property name="locations">
+            <list>
+                <value>classpath:project.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+-->
+    <mvc:annotation-driven>
+	  <mvc:return-value-handlers>
+	    <bean class="com.paytm.pgplus.theia.response.handler.AddSignatureReturnValueHandler"/>
+	  </mvc:return-value-handlers>
+	</mvc:annotation-driven>
+
+    <import resource="classpath:LooperClientContext.xml"/>
+    <!-- <import resource="classpath:savedcardclient-context.xml"/> -->
+    <import resource="classpath:cashier-context.xml"/>
+    <import resource="classpath*:/promoServiceClientAppContext.xml"/>
+    <bean class="com.paytm.pgplus.transactionlogger.conf.AspectConfig"/>
+    <import resource="classpath:dynamicwrappercontext.xml"/>
+    <!-- Root Context: defines shared resources visible to all other web components -->
+
+    <import resource="classpath:vault-integration.xml" />
+    <import resource="classpath:circuit-breaker-context.xml"/>
+
+</beans>

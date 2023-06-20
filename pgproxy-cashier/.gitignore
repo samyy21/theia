@@ -1,0 +1,17 @@
+/bin/
+*/bin/
+*/target/**
+*/.classpath
+*/.settings/**
+.eclipse-pmd
+*/.springBeans
+*/.pmd
+*/reports/**
+*.log
+.pmd
+*/.springBeans
+*/**/*.orig
+/target/
+**/target/**
+.project
+.settings/**

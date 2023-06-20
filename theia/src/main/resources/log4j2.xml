@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" monitorInterval="30">
+	<!-- Don't forget to set system property -DLog4jContextSelector=org.apache.logging.log4j.core.async.LoggerContextSelector 
+		to make all loggers asynchronous. -->
+	<Properties>
+		<Property name="logpath-location">/paytm/logs</Property>
+		<Property name="logfile-name">theia.log</Property>
+		<Property name="txnState-logfile-name">txn_states.log</Property>
+		<Property name="txnState-archive">${logpath-location}/archive/txnState</Property>
+		<Property name="archive">${logpath-location}/archive/theia</Property>
+		<Property name="facade-logfile-name">theia_facade.log</Property>
+		<Property name="facade-archive">${logpath-location}/archive_latest/theia_facade</Property>
+		<Property name="statistics-logfile-name">theia_statistics.log</Property>
+		<Property name="statistics-archive">${logpath-location}/archive/theia_statistics</Property>
+		<Property name="ui-analytics-logfile-name">ui-analytics.log</Property>
+		<Property name="ui-analytics-archive">${logpath-location}/archive/ui-analytics</Property>
+		<Property name="userAgent-analytics-logfile-name">userAgent-analytics.log</Property>
+		<Property name="userAgent-analytics-archive">${logpath-location}/archive/userAgent-analytics</Property>
+        <Property name="event-logfile-name">events.log</Property>
+        <Property name="event-archive">${logpath-location}/archive/events</Property>
+		<Property name="workflow-metrics-logfile-name">workflow-metrics.log</Property>
+		<Property name="workflow-metrics-archive">${logpath-location}/archive/workflow-metrics</Property>
+		<Property name="interval">10</Property>
+        <Property name="mock">mock</Property>
+        <Property name="xss-archive">${logpath-location}/archive/xss-analytics</Property>
+        <Property name="xss-logfile-name">xss_request_analytics.log</Property>
+        <Property name="stats-logfile-name">stats_logger.log</Property>
+        <Property name="stats-archive">${logpath-location}/archive/stats_logger</Property>
+        <Property name="theia-request-response-logfile-name">theia_request_response.log</Property>
+        <Property name="archive_latest">${logpath-location}/archive_latest/theia_request_response</Property>
+
+        <!-- redis-metrics properties -->
+        <Property name="redis-metrics-logfile-name">redis-metrics.log</Property>
+        <Property name="redis-metrics-archive">${logpath-location}/archive/redis-metrics</Property>
+
+        <Property name="sentinel-logfile-name">sentinel-log.log</Property>
+        <Property name="sentinel-archive">${logpath-location}/archive/sentinel</Property>
+
+    </Properties>
+
+    <Appenders>
+        <Console name="Console">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+        </Console>
+
+        <Routing name="RollingFileAppender">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+                <Route>
+                    <RollingRandomAccessFile name="RollingFileAppender" fileName="${logpath-location}/${logfile-name}"
+                                 filePattern="${archive}/${logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+                <Route key="true">
+                    <RollingRandomAccessFile name="RollingFileAppenderMock" fileName="${logpath-location}/${mock}/${logfile-name}"
+                                 filePattern="${archive}/${mock}/${logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+            </Routes>
+        </Routing>
+
+
+        <Routing name="TxnStateRollingFileAppender">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+
+                <Route>
+                    <RollingRandomAccessFile name="TxnStateRollingFileAppender"
+                                 fileName="${logpath-location}/${txnState-logfile-name}"
+                                 filePattern="${txnState-archive}/${txnState-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+                <Route key="true">
+                    <RollingRandomAccessFile name="TxnStateRollingFileAppenderMock"
+                                 fileName="${logpath-location}/${mock}/${txnState-logfile-name}"
+                                 filePattern="${txnState-archive}/${mock}/${txnState-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+            </Routes>
+        </Routing>
+
+        <Routing name="Statistics">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+
+
+                <Route>
+                    <RollingRandomAccessFile name="Statistics" fileName="${logpath-location}/${statistics-logfile-name}"
+                                 filePattern="${statistics-archive}/${statistics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+                <Route key="true">
+                    <RollingRandomAccessFile name="StatisticsMock" fileName="${logpath-location}/${mock}/${statistics-logfile-name}"
+                                 filePattern="${statistics-archive}/${mock}/${statistics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+            </Routes>
+        </Routing>
+
+        <Routing name="FacadeRollingFileAppender">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+
+                <Route>
+                    <RollingRandomAccessFile name="FacadeRollingFileAppender" fileName="${logpath-location}/${facade-logfile-name}"
+                                 filePattern="${facade-archive}/${facade-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+                <Route key="true">
+                    <RollingRandomAccessFile name="FacadeRollingFileAppenderMock"
+                                 fileName="${logpath-location}/${mock}/${facade-logfile-name}"
+                                 filePattern="${facade-archive}/${mock}/${facade-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout pattern="%msg%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+            </Routes>
+        </Routing>
+
+        <RollingRandomAccessFile name="UIAnalyiticsRollingFileAppender" fileName="${logpath-location}/${ui-analytics-logfile-name}"
+                     filePattern="${ui-analytics-archive}/${ui-analytics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+            <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="UserAgenetAnalyiticsRollingFileAppender"
+                     fileName="${logpath-location}/${userAgent-analytics-logfile-name}"
+                     filePattern="${userAgent-analytics-archive}/${userAgent-analytics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+            <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+        </RollingRandomAccessFile>
+
+		<RollingRandomAccessFile name="WorkflowMetricsAppender" fileName="${logpath-location}/${workflow-metrics-logfile-name}"
+					 filePattern="${workflow-metrics-archive}/${workflow-metrics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+			<PatternLayout
+					pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+			<TimeBasedTriggeringPolicy interval = "${interval}" modulate="true" ></TimeBasedTriggeringPolicy>
+		</RollingRandomAccessFile>
+		<RollingRandomAccessFile name="EventRollingFileAppender" fileName="${logpath-location}/${event-logfile-name}"
+		                filePattern="${event-archive}/${event-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+			<PatternLayout
+		           pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - (%m)%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"/>
+			</Policies>
+		</RollingRandomAccessFile>
+        <RollingRandomAccessFile name="XSSRequestAnalyticsRollingFileAppender" fileName="${logpath-location}/${xss-logfile-name}"
+                     filePattern="${xss-archive}/${xss-logfile-name}.%d{yyyy-MM-dd-HH}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="StatsLoggerAppender" fileName="${logpath-location}/${stats-logfile-name}"
+                     filePattern="${stats-archive}/${stats-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+            <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+        </RollingRandomAccessFile>
+
+
+        <!-- Appender for redis-metrics -->
+        <RollingRandomAccessFile name="RedisMetricsAppender" fileName="${logpath-location}/${redis-metrics-logfile-name}"
+                     filePattern="${redis-metrics-archive}/${redis-metrics-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n" />
+            <TimeBasedTriggeringPolicy interval = "${interval}" modulate="true" ></TimeBasedTriggeringPolicy>
+        </RollingRandomAccessFile>
+
+        <Routing name="SentinelAppender">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+                <Route>
+                    <RollingRandomAccessFile name="SentinelAppender" fileName="${logpath-location}/${sentinel-logfile-name}"
+                                 filePattern="${sentinel-archive}/${sentinel-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+                <Route key="true">
+                    <RollingFile name="SentinelAppenderMock" fileName="${logpath-location}/${mock}/${sentinel-logfile-name}"
+                                 filePattern="${sentinel-archive}/${mock}/${sentinel-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingFile>
+                </Route>
+
+            </Routes>
+        </Routing>
+
+        <Routing name="TheiaRequestResponseFileAppender">
+            <Routes pattern="$${ctx:IS_MOCK_REQUEST}">
+                <Route>
+                    <RollingRandomAccessFile name="TheiaRequestResponseFileAppender" fileName="${logpath-location}/${theia-request-response-logfile-name}"
+                                 filePattern="${archive_latest}/${theia-request-response-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+                <Route key="true">
+                    <RollingRandomAccessFile name="TheiaRequestResponseFileAppenderMock" fileName="${logpath-location}/${mock}/${theia-request-response-logfile-name}"
+                                 filePattern="${archive_latest}/${mock}/${theia-request-response-logfile-name}.%d{yyyy-MM-dd-HH-mm}.gz">
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c.%M():%L %X - %m%n"/>
+                        <TimeBasedTriggeringPolicy interval="${interval}" modulate="true"></TimeBasedTriggeringPolicy>
+                    </RollingRandomAccessFile>
+                </Route>
+
+            </Routes>
+        </Routing>
+	</Appenders>
+
+	<Loggers>
+		<!-- 3rd party library loggers -->
+		<AsyncLogger name="org" level="WARN" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</AsyncLogger>
+		<AsyncLogger name="com.mchange.v2" level="ERROR" includeLocation="true" additivity="false">
+			<AppenderRef ref="Console" level="ERROR" />
+			<AppenderRef ref="RollingFileAppender" />
+		</AsyncLogger>
+		<!-- Paytm application logger -->
+		<AsyncLogger name="com.paytm.pgplus" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="RollingFileAppender" />
+		</AsyncLogger>
+
+        <AsyncLogger name="com.paytm.pgplus.transactionlogger" level="DEBUG" includeLocation="true" additivity="false">
+            <AppenderRef ref="TxnStateRollingFileAppender" level="DEBUG"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="STATISTICS" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="Statistics" level="DEBUG"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="WORKFLOW_METRICS" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="WorkflowMetricsAppender" level="DEBUG"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="com.paytm.pgplus.facade" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="FacadeRollingFileAppender" level="INFO"/>
+        </AsyncLogger>
+        <AsyncLogger name="com.paytm.pgplus.theia.services.impl.UITrackServiceImpl" level="INFO" includeLocation="true"
+                additivity="false">
+            <AppenderRef ref="UIAnalyiticsRollingFileAppender" level="INFO"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="USER_AGENT_LOGGER" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="UserAgenetAnalyiticsRollingFileAppender" level="DEBUG"/>
+        </AsyncLogger>
+		<AsyncLogger name="USER_AGENT_LOGGER" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="UserAgenetAnalyiticsRollingFileAppender" level="DEBUG"/>
+		</AsyncLogger>
+		<AsyncLogger name="EVENT_LOGGER" level="INFO" includeLocation="true" additivity="false">
+			<AppenderRef ref="EventRollingFileAppender"/>
+		</AsyncLogger>
+        <AsyncLogger name="STATS_LOGGER" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="StatsLoggerAppender"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="XSS_LOGGER" level="INFO"  additivity="false">
+            <AppenderRef ref="XSSRequestAnalyticsRollingFileAppender"/>
+        </AsyncLogger>
+
+        <!--Logger for redis-metrics -->
+        <AsyncLogger name="REDIS_CLUSTER_OPERATION_METRICS" level="INFO" includeLocation="true" additivity="false">
+            <AppenderRef ref="RedisMetricsAppender" level="INFO"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="com.alibaba.csp" level="DEBUG" additivity="false" >
+            <AppenderRef ref="SentinelAppender"/>
+        </AsyncLogger>
+
+        <AsyncLogger name="com.paytm.pgplus.theia.nativ.filter.LoggingFilter" level="INFO" includeLocation="true" additivity="false" >
+            <AppenderRef ref="TheiaRequestResponseFileAppender"/>
+        </AsyncLogger>
+
+
+        <!-- Root logger -->
+        <AsyncRoot level="INFO" includeLocation="true">
+            <AppenderRef ref="Console" level="ERROR"/>
+            <AppenderRef ref="RollingFileAppender" level="INFO"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>

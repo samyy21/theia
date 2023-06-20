@@ -1,0 +1,260 @@
+{
+  "refund": {
+    "requestParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "rules": [
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          },
+          {
+            "iKey": "merchant_account_id",
+            "oKey": "mid"
+          },
+          {
+            "iKey": "facebook_payment_id",
+            "oKey": "orderId"
+          },
+          {
+            "iKey": "refund_refrence_id",
+            "oKey": "refId"
+          },
+          {
+            "iKey": "comments",
+            "expr": "'Initiating Refund...'",
+            "oKey": "comments"
+          },
+          {
+            "iKey": "txnType",
+            "expr": "'REFUND'",
+            "oKey": "txnType"
+          },
+          {
+            "iKey": "amount",
+            "oKey": "refundAmount"
+          }
+        ]
+      }
+    },
+    "responseParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "mappings": {
+          "10": "316",
+          "501": "316",
+          "607": "312",
+          "619": "305",
+          "601": "323",
+          "610": "305",
+          "SUCCESS": "Async Response",
+          "PENDING": "Async Response",
+          "ORDER_NOT_EXISTS": "Invalid facebook_payment_id",
+          "Invalid refund amount.": "Refund Exceeds Purchase"
+        },
+        "rules": [
+          {
+            "iKey": "REFID",
+            "oKey": "reference_id"
+          },
+          {
+            "iKey": "RESPCODE",
+            "expr": "mappedValue(val)",
+            "oKey": "response_code"
+          },
+          {
+            "iKey": "RESPMSG",
+            "expr": "mappedValue(val)",
+            "oKey": "response_message"
+          },
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          }
+        ]
+      }
+    }
+  },
+  "refundStatus": {
+    "requestParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "rules": [
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          },
+          {
+            "iKey": "merchant_account_id",
+            "oKey": "mid"
+          },
+
+          {
+            "iKey": "refund_refrence_id",
+            "oKey": "refId"
+          }
+        ]
+      }
+    },
+    "responseParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "REFUND_LIST",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "mappings": {
+          "10": "0",
+          "600": "324",
+          "619": "305",
+          "601": "0",
+          "607": "0",
+          "Invalid refund request": "unknown refund_reference_id",
+          "Refund can not be initiated for a cancelled transaction.": "failure",
+          "Refund request was raised for this transaction. But it is pending state.": "pending",
+          "Invalid refund amount.": "Refund Exceeds Purchase",
+          "TXN_FAILURE":"Failure"
+        },
+        "rules": [
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          },
+          {
+            "iKey": "REFID",
+            "oKey": "reference_id"
+          },
+          {
+            "iKey": "RESPCODE",
+            "expr": "mappedValue(val)",
+            "oKey": "response_code"
+          },
+          {
+            "iKey": "STATUS",
+            "expr": "mappedValue(val)",
+            "oKey": "refund_status"
+          },
+          {
+            "iKey": "RESPMSG",
+            "expr": "mappedValue(val)",
+            "oKey": "response_message"
+          }
+        ]
+      }
+    }
+  },
+  "txnStatus": {
+    "requestParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "rules": [
+          {
+            "iKey": "merchant_account_id",
+            "oKey": "MID"
+          },
+          {
+            "iKey": "facebook_payment_id",
+            "oKey": "ORDERID"
+          },
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          }
+        ]
+      }
+    },
+    "responseParameter": {
+      "parserConfig": {
+        "sourceClass": "java.lang.String",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "JSON"
+      },
+      "transformationConfig": {
+        "mappings": {
+          "01": "0",
+          "227": "0",
+          "400": "0",
+          "331": "312",
+          "101": "0",
+          "Payment failed due to a technical error. Please try after some time.": "Success",
+          "Txn Successful.": "Success",
+          "No Record Found": "unknown payment",
+          "Transaction status not confirmed yet.": "Success",
+          "[CMER-IP101] Internal Processing Error": "Success",
+          "TXN_SUCCESS": "success",
+          "TXN_FAILURE": "failure"
+        },
+        "rules": [
+          {
+            "iKey": "STATUS",
+            "expr": "mappedValue(val)",
+            "oKey": "payment_status"
+          },
+          {
+            "iKey": "TXNID",
+            "oKey": "reference_id"
+          },
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          },
+          {
+            "iKey": "RESPCODE",
+            "expr": "mappedValue(val)",
+            "oKey": "response_code"
+          },
+          {
+            "iKey": "RESPMSG",
+            "expr": "mappedValue(val)",
+            "oKey": "response_message"
+          }
+        ]
+      }
+    }
+  },
+  "payOptions": {
+    "requestParameter": {
+      "parserConfig": {
+        "sourceClass": "javax.servlet.http.HttpServletRequest",
+        "isEncrypted": "false",
+        "payloadPath": "",
+        "contentType": "FORM_DATA",
+        "customParserClass": "com.paytm.pgplus.dynamicwrapper.core.parser.helper.httpServletReqRespParser.HttpSReqJsonParser"
+      },
+      "transformationConfig": {
+        "rules": [
+          {
+            "iKey": "merchant_account_id",
+            "oKey": "MID"
+          },
+          {
+            "iKey": "request_id",
+            "oKey": "request_id"
+          }
+        ]
+      }
+    }
+  }
+}

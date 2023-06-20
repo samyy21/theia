@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suit1" verbose="1">
+    <test name="suite_1">
+        <classes>
+            <class name="com.paytm.pgplus.theia.services.helper.NativeDirectBankPageHelperTest"/>
+            <class name="com.paytm.pgplus.theia.services.helper.CashierInternalPaymentRetryServiceImpl"/>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+<!--        <?xml version="1.0" encoding="UTF-8"?>-->
+<!--        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="test_suite">-->
+<!--<test name="Module 1">-->
+<!--    <classes>-->
+<!--        <class name="com.javatpoint.Module1"/>-->
+<!--    </classes>-->
+<!--</test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--<test name="Module 2">-->
+<!--    <classes>-->
+<!--        <class name="com.javatpoint.Module2"/>-->
+<!--    </classes>-->
+<!--</test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--</suite> &lt;!&ndash; Suite &ndash;&gt;-->
